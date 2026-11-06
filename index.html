@@ -239,6 +239,32 @@ body.pd-open{overflow:hidden}
 .photos figcaption{padding:8px 10px;font-size:13px;font-weight:600;color:var(--text)}
 .photos .ph-btn{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
 .ph-more-wrap{display:flex;justify-content:center;margin-top:12px}
+/* Swatch thay ảnh (sơn nhũ) */
+.pi.swi,.pd-img.swi{background:#F7F8FA}
+.sw-can{width:78%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 -10px 20px rgba(0,0,0,.18),0 6px 16px rgba(0,0,0,.15)}
+.sw-can b{font-size:13px;color:#222;background:rgba(255,255,255,.75);padding:3px 8px;border-radius:999px}
+.sw-mini{display:inline-block;width:44px;height:44px;border-radius:50%;flex:none}
+.sw-mini.big{width:80%;height:80%}
+.fly-grid .sw-mini{width:46px;height:46px}
+/* Bảng màu */
+.bg-sub{margin:-4px 0 10px;font-size:13px;color:var(--muted)}
+.bm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.bm{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;min-height:44px}
+.bm.on{border-color:var(--navy);box-shadow:0 0 0 2px var(--navy)}
+.bm-dot{width:56px;height:56px;border-radius:50%;box-shadow:inset 0 -6px 12px rgba(0,0,0,.18),inset 0 4px 8px rgba(255,255,255,.35),0 1px 3px rgba(0,0,0,.2)}
+.bm b{font-size:12.5px;font-weight:600;line-height:1.25;text-align:center}
+.bm small{font-size:12px;color:var(--muted)}
+.bm-big{display:flex;gap:14px;align-items:center;margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#FAFBFC}
+.bm-big[hidden]{display:none}
+.bm-sw{width:96px;height:96px;border-radius:12px;flex:none;box-shadow:inset 0 -8px 16px rgba(0,0,0,.15)}
+.bm-big p{margin:4px 0 8px;font-size:13px;color:var(--muted)}
+.bm-acts{display:flex;flex-wrap:wrap;gap:8px}
+.bm-acts a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none}
+.bm-acts .ic{width:18px;height:18px}
+.pd-colors span{display:inline-flex;align-items:center;gap:6px}
+.pd-colors i{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+@media (min-width:600px){.bm-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:1024px){.bm-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
 .ph-more{min-height:44px;padding:0 22px;border-radius:999px;border:1.5px solid var(--navy);color:var(--navy);font-weight:700;background:#fff}
 .ph-more[hidden]{display:none}
 .lb{position:fixed;inset:0;z-index:130;background:rgba(5,12,25,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 8px 16px}
@@ -548,7 +574,7 @@ footer ul{list-style:none;margin:0;padding:0}
 
   <!-- Dầu bóng -->
   <section class="block card" id="dau-bong" aria-labelledby="h-dau-bong">
-    <div class="block-h"><h2 id="h-dau-bong">Dầu bóng</h2><a class="more" href="#dau-bong">Xem tất cả ›</a></div>
+    <div class="block-h"><h2 id="h-dau-bong">Sơn nhũ &amp; dầu bóng</h2><a class="more" href="#dau-bong">Xem tất cả ›</a></div>
     <div class="chips" role="group" aria-label="Lọc dầu bóng"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
     <div class="hs prow" data-group="dau-bong"></div>
   </section>
@@ -573,6 +599,14 @@ footer ul{list-style:none;margin:0;padding:0}
     <div class="chips" role="group" aria-label="Lọc sơn chống nóng"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
     <div class="hs prow" data-group="son-chong-nong"></div>
     <p class="note">Giá bán lẻ áp dụng từ 01/11/2026 và có thể điều chỉnh; vui lòng liên hệ xác nhận trước khi đặt hàng. Sản phẩm ghi "Liên hệ" chưa có giá niêm yết, vui lòng gọi hoặc nhắn Zalo để nhận báo giá. Thông tin sản phẩm mang tính tham khảo theo nhà sản xuất.</p>
+  </section>
+
+  <!-- Bảng màu Ruby -->
+  <section class="block card" id="bang-mau" aria-labelledby="h-bm">
+    <div class="block-h"><h2 id="h-bm">Bảng màu Ruby</h2><span class="more" id="bmCount"></span></div>
+    <p class="bg-sub">Bấm vào ô màu để xem lớn. Màu trên màn hình chỉ gần đúng, màu thực tế theo bảng màu giấy; liên hệ để được gửi bảng màu thật.</p>
+    <div class="bm-grid" id="bmGrid"></div>
+    <div class="bm-big" id="bmBig" hidden></div>
   </section>
 
   <!-- Hình ảnh thực tế -->
@@ -609,10 +643,11 @@ footer ul{list-style:none;margin:0;padding:0}
         <ul class="flinks">
           <li><a href="#son-kem">Sơn kẽm</a></li>
           <li><a href="#son-dau">Sơn dầu</a></li>
-          <li><a href="#dau-bong">Dầu bóng</a></li>
+          <li><a href="#dau-bong">Sơn nhũ &amp; dầu bóng</a></li>
           <li><a href="#son-epoxy">Sơn epoxy</a></li>
           <li><a href="#son-lot">Sơn lót &amp; chống rỉ</a></li>
           <li><a href="#son-chong-nong">Sơn chống nóng</a></li>
+          <li><a href="#bang-mau">Bảng màu Ruby</a></li>
           <li><a href="#hinh-anh">Hình ảnh thực tế</a></li>
         </ul>
       </div>
@@ -717,7 +752,7 @@ footer ul{list-style:none;margin:0;padding:0}
   var G=[
     {id:'son-kem',n:'Sơn kẽm',ic:'can',img:'son-kem-1k-900g.png'},
     {id:'son-dau',n:'Sơn dầu',ic:'drop',img:'son-dau-tong-hop-1kg.png'},
-    {id:'dau-bong',n:'Dầu bóng',ic:'spark',img:'dau-bong-2k-1kg.png'},
+    {id:'dau-bong',n:'Sơn nhũ & dầu bóng',ic:'spark',img:'dau-bong-2k-1kg.png'},
     {id:'son-epoxy',n:'Sơn epoxy',ic:'layers',img:'son-san-epoxy-20kg.png'},
     {id:'son-lot',n:'Sơn lót & chống rỉ',ic:'shield',img:'son-lot-kem-epoxy-sapa.png'},
     {id:'son-chong-nong',n:'Sơn chống nóng',ic:'sun',img:'son-chong-nong-ruby.jpg'}
@@ -806,8 +841,8 @@ footer ul{list-style:none;margin:0;padding:0}
       ud:['Cốt thép, khung thép, kết cấu kim loại trong xây dựng','Thiết bị, kết cấu trong nhà máy, khu công nghiệp','Cầu, đường ray, hàng rào, cổng và bề mặt kim loại ngoài trời'],
       hd:['Làm sạch bề mặt kim loại, khô ráo, không rỉ sét, bụi bẩn','Pha theo tỉ lệ của nhà sản xuất (nhãn lon: pha xăng Nhật hoặc xăng PU)','Thi công trong điều kiện nhiệt độ, độ ẩm phù hợp','Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp'],
       ts:[['Sơn lớp tiếp theo sau','4–6 giờ'],['Màu (theo nhãn lon)','Xám epoxy']]}},
-    {id:14,g:'son-lot',n:'Sơn lót chống rỉ Ruby',q:'3 lít / 5 lít / 18 lít',p:'',img:'',t:[],d:{
-      m:'Sơn lót 1 thành phần sản xuất từ nhựa alkyd, oxide và phụ gia. Dùng làm lớp lót đầu tiên cho bề mặt thép chưa mạ kẽm, phù hợp kết cấu trong nhà và ngoài trời.',
+    {id:14,g:'son-lot',n:'Sơn lót – chống rỉ (sắt đen)',q:'Thùng 18kg',p:'825.000 đ',img:'',t:[],d:{
+      m:'Sơn lót chống rỉ 1 thành phần sản xuất từ nhựa alkyd, oxide và phụ gia. Dùng làm lớp lót đầu tiên cho bề mặt sắt đen, thép chưa mạ kẽm, phù hợp kết cấu trong nhà và ngoài trời. Ngoài thùng 18kg còn có loại 3 lít, 5 lít (liên hệ để báo giá).',
       dd:['Bám dính tốt','Màng sơn cứng và dẻo dai','Chịu thời tiết tốt','Dễ sử dụng'],
       ud:['Lớp lót cho thép chưa mạ kẽm','Kết cấu thép trong nhà và ngoài trời'],
       ts:[['Độ dày tiêu chuẩn','35 micron/lớp'],['Định mức','9,5 m²/lít'],['Khô (sờ tay)','4 giờ'],['Khô cứng','12 giờ'],['Sơn lớp kế tiếp','Tối thiểu 12 giờ, tối đa 6 tháng'],['Màu','Đỏ nâu']],
@@ -824,8 +859,43 @@ footer ul{list-style:none;margin:0;padding:0}
       ud:['Mái tôn, vách tôn','Tường ngoài nhà, sân thượng, mái bê tông','Bề mặt kim loại, gỗ, bê tông; kết cấu, máy móc, thiết bị'],
       hd:['Làm sạch và giữ bề mặt khô ráo','Khuấy đều, sản phẩm dùng ngay không cần pha','Sơn 1 lớp lót, để khô 2–4 giờ','Sơn 2–3 lớp hoàn thiện, khô 24 giờ','Vệ sinh dụng cụ và bảo quản đúng cách'],
       ts:[['Độ bóng','Bán mờ, khoảng 30–40% (60°)'],['Hàm lượng chất rắn','45–50% theo thể tích'],['Khối lượng riêng','1,2–1,3 kg/lít'],['Khô bề mặt','2–4 giờ'],['Khô hoàn toàn','24 giờ'],['Độ dày màng','25–35 micron'],['Pha trộn','Dùng ngay, không cần pha']],
-      mau:['Trắng','Bạc','Xanh','Màu khác theo yêu cầu']}}
+      mau:['Trắng','Bạc','Xanh','Màu khác theo yêu cầu']}},
+    {id:17,g:'son-lot',n:'Sơn lót – chống rỉ (kẽm)',q:'Lon 900g',p:'66.000 đ',img:'',t:[],d:{
+      m:'Sơn lót dùng cho bề mặt sắt mạ kẽm, sắt tráng kẽm. Tạo lớp nền chống ăn mòn, giúp lớp sơn phủ phía trên bám chắc hơn trên bề mặt kẽm trơn.',
+      dd:['Tăng độ bám dính cho lớp sơn phủ trên bề mặt kẽm','Chống ăn mòn, chống oxi hóa cho kim loại','Bảo vệ kim loại khỏi độ ẩm','Thi công bằng cọ, con lăn hoặc súng phun'],
+      ud:['Sắt mạ kẽm, sắt tráng kẽm, tôn kẽm','Cửa, cổng, hàng rào, lan can mạ kẽm','Kết cấu thép mạ kẽm trong công trình'],
+      hd:['Làm sạch bề mặt, khô ráo, không dầu mỡ, bụi bẩn','Khuấy đều; pha dung môi theo tỉ lệ khuyến cáo của nhà sản xuất','Sơn 1 lớp lót mỏng, đều','Chờ lớp lót khô rồi mới sơn lớp phủ hoàn thiện'],
+      ts:[['Quy cách','Lon 900g']]}},
+    {id:18,g:'dau-bong',n:'Nhũ vàng đồng',q:'Lon 900g',p:'138.000 đ',img:'',sw:'linear-gradient(135deg,#8C6420 0%,#E7C873 45%,#B8862B 70%,#F3DD95 100%)',t:[],d:{
+      m:'Sơn nhũ màu vàng đồng (mã Nhũ vàng 1823 trong bảng màu Ruby), tạo hiệu ứng ánh kim sang trọng cho bề mặt trang trí.',
+      dd:['Màu vàng đồng ánh kim','Tạo điểm nhấn trang trí','Có thể phủ dầu bóng 2K để tăng độ bóng và độ bền'],
+      ud:['Hoa văn cửa sắt, cổng, lan can, hàng rào','Chi tiết trang trí kim loại, gỗ','Đồ trang trí, sơn điểm nhấn'],
+      hd:['Làm sạch bề mặt, khô ráo','Khuấy thật đều trước và trong khi sơn để nhũ phân bố đều','Sơn lớp mỏng, đều tay','Liên hệ Đại Kiên để được tư vấn lớp lót và dầu bóng phù hợp'],
+      ts:[['Mã màu','Nhũ vàng 1823']],mau:['Nhũ vàng 1823']}},
+    {id:19,g:'dau-bong',n:'Sơn nhũ bạc',q:'Lon 900g',p:'99.000 đ',img:'',sw:'linear-gradient(135deg,#6E7173 0%,#D9DBDC 45%,#9A9D9F 70%,#EEF0F1 100%)',t:[],d:{
+      m:'Sơn nhũ màu bạc (mã Nhũ bạc 1824 trong bảng màu Ruby), tạo bề mặt ánh kim màu bạc cho các chi tiết trang trí và kim loại.',
+      dd:['Màu bạc ánh kim','Tạo vẻ hiện đại, sáng sủa cho bề mặt','Có thể phủ dầu bóng 2K để tăng độ bóng và độ bền'],
+      ud:['Cửa sắt, khung sắt, lan can, hàng rào','Chi tiết trang trí kim loại, gỗ','Đồ trang trí, sơn điểm nhấn'],
+      hd:['Làm sạch bề mặt, khô ráo','Khuấy thật đều trước và trong khi sơn để nhũ phân bố đều','Sơn lớp mỏng, đều tay','Liên hệ Đại Kiên để được tư vấn lớp lót và dầu bóng phù hợp'],
+      ts:[['Mã màu','Nhũ bạc 1824']],mau:['Nhũ bạc 1824']}},
+    {id:20,g:'son-epoxy',n:'Keo lót epoxy',q:'Bộ 20kg',p:'1.980.000 đ',img:'',t:[],d:{
+      m:'Lớp lót (primer) 2 thành phần cho hệ sơn sàn epoxy. Thi công trước lớp phủ để tăng độ bám dính giữa nền bê tông và lớp sơn epoxy.',
+      dd:['Tăng độ bám dính giữa nền bê tông và sơn phủ epoxy','Thấm sâu, làm chắc bề mặt nền','Tạo nền đồng đều cho các lớp sơn phủ'],
+      ud:['Nền bê tông nhà xưởng, kho bãi, tầng hầm','Nền bãi đỗ xe, khu công nghiệp','Dùng chung với sơn sàn epoxy'],
+      hd:['Chuẩn bị nền: kiểm tra độ ẩm, vết nứt, dầu mỡ; mài tạo nhám và hút sạch bụi','Trộn 2 thành phần theo tỉ lệ A : B = 1 : 1','Lăn 1 lớp lót đều, khoảng 50 micron','Chờ lớp lót khô rồi thi công các lớp sơn sàn epoxy'],
+      ts:[['Tỉ lệ pha','A : B = 1 : 1'],['Độ dày lớp lót','Khoảng 50 micron']]}}
   ];
+  /* Bảng màu Ruby dựng lại trên web (màu gần đúng) */
+  var PAL=[
+    ['Xám lợt','XF026','#5A5F61'],['Xám trắng','120','#BFC6C8'],['Xanh da trời','710','#8FD3EE'],['Xanh chuối','653','#A6CB6E'],['Hồng cánh sen','131','#DE6E86'],['Trắng bóng','111','#F2F2EC'],
+    ['Xám đậm','XF027','#4A5055'],['Xám ghi','122','#8C979B'],['Xanh','640','#4F9FD8'],['Xanh ngọc','583','#4FC6BA'],['Cam','233','#C9372C'],['Màu kem','002','#F0D6AE'],
+    ['Xingfa nhạt','11','#3C474D'],['Xám xanh','610','#93B1AE'],['Xanh Yamaha','715','#2E5FAE'],['Xanh','31A','#7CC5C8'],['Đỏ','210','#B33A4A'],['Kem nhạt','9191','#EFE6BC'],
+    ['Xingfa đậm','22','#1E2A31'],['Xám','4241','#9AA29C'],['Xanh dương','680','#1F2F6B'],['Xanh cẩm thạch','612','#2FA06A'],['Cafe sữa','355','#B79A72'],['Kem đậm','303','#F2E2B6'],
+    ['Xingfa','671','#3E3F42'],['Xám','910','#7F8C8C'],['Màu tím','611','#3E1F5E'],['Xanh lá','618','#0B5530'],['Giả gỗ','836','#7A3E26'],['Vàng chanh','1811','#F7B90E'],
+    ['Xingfa nâu đỏ','503','#3D2C2C'],['Xám đậm','940','#55585B'],['Đen bóng','333','#101418'],['Xanh','675','#0A4A2A'],['Nâu cánh gián','221','#4A1A1A'],['Vàng nghệ','1809','#F4A01A'],
+    ['Nhũ vàng','1823','linear-gradient(135deg,#8C6420 0%,#E7C873 45%,#B8862B 70%,#F3DD95 100%)'],['Nhũ bạc','1824','linear-gradient(135deg,#6E7173 0%,#D9DBDC 45%,#9A9D9F 70%,#EEF0F1 100%)']
+  ];
+  function palFor(name){var m=String(name).match(/XF\d+|\d{2,4}[A-Z]?/);if(!m)return null;for(var i=0;i<PAL.length;i++){if(PAL[i][1]===m[0])return PAL[i];}return null;}
   var SP='assets/sp/';
   var NOIMG='assets/logo-dai-kien.png';
   function src(p){return p.img?SP+p.img:NOIMG;}
@@ -838,7 +908,7 @@ footer ul{list-style:none;margin:0;padding:0}
     row.innerHTML=inG(g.id).map(function(p){
       return '<article class="pc" id="sp-'+p.id+'" data-t="'+p.t.join(' ')+'">'+
         '<a class="pc-link" href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'" aria-label="Xem chi tiết '+p.n+' – '+p.q+'">'+
-        '<div class="pi'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+p.n+' – '+p.q+'" loading="lazy" width="300" height="300"></div>'+
+        (p.sw?'<div class="pi swi"><span class="sw-can" style="background:'+p.sw+'"><b>'+p.n+'</b></span></div>':'<div class="pi'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+p.n+' – '+p.q+'" loading="lazy" width="300" height="300"></div>')+
         '<h3>'+p.n+' – '+p.q+'</h3></a>'+
         '<div class="price'+(p.p?'':' lh')+'">'+priceOf(p)+'</div>'+
         '<div class="spec">Quy cách: '+p.q+'</div>'+
@@ -856,11 +926,11 @@ footer ul{list-style:none;margin:0;padding:0}
   }).join('');
 
   /* Sidebar + flyouts, category panel */
-  var extra=[{h:'#lien-he',n:'Báo giá công trình',ic:'doc'},{h:'#lien-he',n:'Dành cho đại lý',ic:'store'},{h:'#lien-he',n:'Liên hệ',ic:'phone'}];
+  var extra=[{h:'#bang-mau',n:'Bảng màu Ruby',ic:'drop'},{h:'#lien-he',n:'Báo giá công trình',ic:'doc'},{h:'#lien-he',n:'Dành cho đại lý',ic:'store'},{h:'#lien-he',n:'Liên hệ',ic:'phone'}];
   document.getElementById('sideList').innerHTML=G.map(function(g){
     return '<li><a href="#'+g.id+'">'+ic(g.ic)+g.n+'<span class="chev" aria-hidden="true">›</span></a>'+
       '<div class="fly"><div class="fly-in"><h3>'+g.n+'</h3><div class="fly-grid">'+
-      inG(g.id).map(function(p){return '<a href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'"><img src="'+src(p)+'" alt="" loading="lazy"><span><b>'+p.n+' – '+p.q+'</b><small>'+priceOf(p)+'</small></span></a>';}).join('')+
+      inG(g.id).map(function(p){return '<a href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'">'+(p.sw?'<span class="sw-mini" style="background:'+p.sw+'"></span>':'<img src="'+src(p)+'" alt="" loading="lazy">')+'<span><b>'+p.n+' – '+p.q+'</b><small>'+priceOf(p)+'</small></span></a>';}).join('')+
       '</div><a class="all" href="#'+g.id+'">Xem tất cả '+g.n.toLowerCase()+' ›</a></div></div></li>';
   }).join('')+'<li aria-hidden="true"><hr></li>'+extra.map(function(e){
     return '<li><a href="'+e.h+'">'+ic(e.ic)+e.n+'<span class="chev" aria-hidden="true">›</span></a></li>';
@@ -913,7 +983,7 @@ footer ul{list-style:none;margin:0;padding:0}
     if(!v.trim()){closeSearch();return;}
     var r=matches(v);
     sd.innerHTML=r.length?r.map(function(p){
-      return '<a href="#chi-tiet-'+p.id+'" role="option" data-pd="'+p.id+'"><img src="'+src(p)+'" alt=""><span><b>'+p.n+'</b><small>'+p.q+' · '+gName[p.g]+'</small></span><span class="pr">'+priceOf(p)+'</span></a>';
+      return '<a href="#chi-tiet-'+p.id+'" role="option" data-pd="'+p.id+'">'+(p.sw?'<span class="sw-mini" style="background:'+p.sw+'"></span>':'<img src="'+src(p)+'" alt="">')+'<span><b>'+p.n+'</b><small>'+p.q+' · '+gName[p.g]+'</small></span><span class="pr">'+priceOf(p)+'</span></a>';
     }).join(''):'<div class="empty">Chưa tìm thấy sản phẩm phù hợp. Gọi <a href="'+TEL+'"><b>0374 390 276</b></a> hoặc nhắn <a href="'+ZALO+'" target="_blank" rel="noopener"><b>Zalo</b></a> để được tư vấn.</div>';
     sd.hidden=false;q.setAttribute('aria-expanded','true');
   }
@@ -934,6 +1004,15 @@ footer ul{list-style:none;margin:0;padding:0}
     e.preventDefault();var r=matches(q.value);
     if(r.length){closeSearch();q.blur();openPd(r[0].id,q);} else renderSearch();
   });
+
+
+  /* Bảng màu Ruby */
+  var bmGrid=document.getElementById('bmGrid'), bmBig=document.getElementById('bmBig');
+  document.getElementById('bmCount').textContent=PAL.length+' màu';
+  bmGrid.innerHTML=PAL.map(function(c,i){return '<button type="button" class="bm" data-bm="'+i+'" aria-label="Màu '+c[0]+' '+c[1]+'"><span class="bm-dot" style="background:'+c[2]+'"></span><b>'+c[0]+'</b><small>'+c[1]+'</small></button>';}).join('');
+  bmGrid.addEventListener('click',function(e){var b=e.target.closest('[data-bm]');if(!b)return;var c=PAL[+b.getAttribute('data-bm')];
+    bmGrid.querySelectorAll('.bm').forEach(function(x){x.classList.toggle('on',x===b);});
+    bmBig.hidden=false;bmBig.innerHTML='<span class="bm-sw" style="background:'+c[2]+'"></span><div><b>'+c[0]+' '+c[1]+'</b><p>Hỏi màu này cho sản phẩm bạn cần:</p><div class="bm-acts"><a class="btn-zalo" href="'+ZALO+'" target="_blank" rel="noopener">'+ic('chat')+'Hỏi qua Zalo</a><a class="btn-gold" href="'+TEL+'">'+ic('phone')+'Gọi tư vấn</a></div></div>';});
 
   /* Hình ảnh thực tế: lọc, xem thêm, phóng to */
   var PH=[
@@ -1000,7 +1079,7 @@ footer ul{list-style:none;margin:0;padding:0}
     var related=inG(p.g).filter(function(x){return x.id!==p.id;});
     pdBody.innerHTML=
       '<div class="pd-head">'+
-        '<div class="pd-img'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+esc(p.n+' – '+p.q)+'"></div>'+
+        (p.sw?'<div class="pd-img swi"><span class="sw-can" style="background:'+p.sw+'"><b>'+esc(p.n)+'</b></span></div>':'<div class="pd-img'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+esc(p.n+' – '+p.q)+'"></div>')+
         '<div class="pd-info">'+
           '<p class="pd-cat">'+esc(gName[p.g])+'</p>'+
           '<h2 id="pd-h">'+esc(p.n)+'</h2>'+
@@ -1021,9 +1100,9 @@ footer ul{list-style:none;margin:0;padding:0}
       sec('Ứng dụng',list(d.ud))+
       sec('Hướng dẫn thi công',list(d.hd,true))+
       sec('Thông số kỹ thuật','<table class="pd-tb"><tbody>'+ts.map(function(r){return '<tr><th scope="row">'+esc(r[0])+'</th><td>'+esc(r[1])+'</td></tr>';}).join('')+'</tbody></table>')+
-      sec('Màu sắc',colors&&colors.length?'<div class="pd-colors">'+colors.map(function(c){return '<span>'+esc(c)+'</span>';}).join('')+'</div>'+(d.mau==='ruby'?'<p class="pd-note">Theo bảng màu sơn Ruby. Liên hệ để xác nhận màu có sẵn cho quy cách này.</p>':''):'')+
+      sec('Màu sắc',colors&&colors.length?'<div class="pd-colors">'+colors.map(function(c){var pl=palFor(c);return '<span>'+(pl?'<i style="background:'+pl[2]+'"></i>':'')+esc(c)+'</span>';}).join('')+'</div>'+'<p class="pd-note">'+(d.mau==='ruby'?'Theo bảng màu sơn Ruby. Liên hệ để xác nhận màu có sẵn cho quy cách này. ':'')+'Màu trên màn hình chỉ gần đúng. <a href="#bang-mau" data-pd-close>Xem bảng màu Ruby ›</a></p>':'')+
       '<p class="pd-note">Thông tin mang tính tham khảo theo nhà sản xuất. Vui lòng liên hệ Đại Kiên để được tư vấn chính xác cho công trình của bạn.</p>'+
-      (related.length?sec('Sản phẩm cùng nhóm','<div class="pd-rel">'+related.map(function(x){return '<a href="#chi-tiet-'+x.id+'" data-pd="'+x.id+'"><span class="'+(x.img?'':'noimg')+'"><img src="'+src(x)+'" alt="" loading="lazy"></span><b>'+esc(x.n+' – '+x.q)+'</b><small>'+esc(priceOf(x))+'</small></a>';}).join('')+'</div>'):'');
+      (related.length?sec('Sản phẩm cùng nhóm','<div class="pd-rel">'+related.map(function(x){return '<a href="#chi-tiet-'+x.id+'" data-pd="'+x.id+'">'+(x.sw?'<span><i class="sw-mini big" style="background:'+x.sw+'"></i></span>':'<span class="'+(x.img?'':'noimg')+'"><img src="'+src(x)+'" alt="" loading="lazy"></span>')+'<b>'+esc(x.n+' – '+x.q)+'</b><small>'+esc(priceOf(x))+'</small></a>';}).join('')+'</div>'):'');
     pd.hidden=false; pdBd.hidden=false; document.body.classList.add('pd-open');
     pd.scrollTop=0; pdBody.scrollTop=0;
     if(location.hash!=='#chi-tiet-'+p.id){history.pushState({pd:p.id},'','#chi-tiet-'+p.id);}
