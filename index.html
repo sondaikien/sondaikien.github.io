@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đại Kiên – Nhà phân phối sơn</title>
+<meta name="description" content="Đại Kiên phân phối sơn kẽm, sơn dầu, dầu bóng và sơn sàn epoxy cho đại lý, công trình và khách lẻ tại TP. Hồ Chí Minh và miền Nam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1D3660; --navy-2:#162a4b; --gold:#F0A500; --gold-dark:#8A5A00;
+  --bg:#F4F6F8; --card:#fff; --text:#333; --muted:#5F5F5F; --line:#E3E7EC;
+  --zalo:#0063F0; --radius:12px; --shadow:0 1px 3px rgba(16,30,54,.08),0 4px 14px rgba(16,30,54,.06);
+  --gut:16px; --navh:62px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.5;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+.promo :focus-visible,.btn-gold:focus-visible{outline-color:var(--navy)}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--gut)}
+.ic{display:inline-flex;width:22px;height:22px;flex:none}
+.ic svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.skip{position:absolute;left:8px;top:-60px;background:var(--gold);color:var(--navy);padding:10px 14px;border-radius:8px;z-index:200;font-weight:700}
+.skip:focus{top:8px}
+
+/* Promo ticker */
+.promo{background:var(--gold);color:var(--navy);font-size:13px;font-weight:600;overflow:hidden}
+.ticker{display:flex;width:max-content;animation:tick 32s linear infinite}
+.ticker ul{display:flex;margin:0;padding:0;list-style:none}
+.ticker li{padding:7px 22px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.ticker li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--navy)}
+.promo:hover .ticker{animation-play-state:paused}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:60;background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.hdr-in{position:relative;display:flex;align-items:center;gap:10px;min-height:64px;padding-top:8px;padding-bottom:8px}
+.logo{flex:none;display:flex;align-items:center;min-height:44px}
+.logo img{height:36px;width:auto}
+.hbtn{display:none;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;background:rgba(255,255,255,.12);font-weight:600;font-size:14px;white-space:nowrap}
+.hbtn:hover{background:rgba(255,255,255,.2)}
+.search{flex:1;min-width:0}
+.search form{display:flex;align-items:center;background:#fff;border-radius:999px;height:44px;padding:0 6px 0 14px;color:var(--text)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:15px;color:var(--text);height:100%}
+.search input::placeholder{color:#6b6b6b}
+.search form:focus-within{box-shadow:0 0 0 3px var(--gold)}
+.search button{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:var(--navy)}
+.sdrop{position:absolute;left:var(--gut);right:var(--gut);top:calc(100% - 4px);background:#fff;color:var(--text);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2);max-height:min(70vh,440px);overflow:auto;padding:6px;z-index:70}
+.sdrop[hidden]{display:none}
+.sdrop a{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;min-height:56px}
+.sdrop a:hover,.sdrop a:focus-visible{background:#F1F4F8}
+.sdrop img{width:44px;height:44px;object-fit:contain;flex:none}
+.sdrop b{display:block;font-weight:600;font-size:14px;line-height:1.3}
+.sdrop small{color:var(--muted);font-size:12.5px}
+.sdrop .pr{margin-left:auto;font-weight:700;color:var(--gold-dark);white-space:nowrap;font-size:14px}
+.sdrop .empty{padding:12px;font-size:14px;color:var(--muted)}
+.hcall{display:none;align-items:center;gap:8px;min-height:48px;padding:4px 12px;border-radius:12px;background:var(--gold);color:var(--navy);white-space:nowrap;line-height:1.2}
+.hcall small{display:block;font-size:11.5px;font-weight:600}
+.hcall b{font-size:15px;font-weight:800}
+.hzalo{display:none;align-items:center;gap:6px;min-height:48px;padding:4px 14px;border-radius:12px;border:1.5px solid rgba(255,255,255,.5);font-weight:700;white-space:nowrap}
+.hzalo:hover{background:rgba(255,255,255,.12)}
+
+/* Category panel */
+.cat-panel{position:fixed;left:0;right:0;bottom:calc(var(--navh) + env(safe-area-inset-bottom));background:#fff;color:var(--text);border-radius:16px 16px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.2);padding:12px;z-index:90;max-height:75vh;overflow:auto}
+.cat-panel[hidden],.backdrop[hidden]{display:none}
+.cat-panel h2{font-size:15px;margin:4px 8px 8px;color:var(--navy)}
+.cat-panel a{display:flex;align-items:center;gap:12px;min-height:48px;padding:6px 10px;border-radius:10px;font-weight:600}
+.cat-panel a:hover{background:#F1F4F8}
+.cat-panel a .ic{color:var(--navy)}
+.cat-panel hr,.side hr{border:0;border-top:1px solid var(--line);margin:6px 8px}
+.backdrop{position:fixed;inset:0;background:rgba(10,20,40,.45);z-index:80}
+.cat-open .hdr{z-index:85}
+
+/* Main */
+main{padding-top:12px}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.side{display:none}
+.hero-right{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.welcome{display:none}
+
+/* Carousel */
+.car{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:var(--navy);box-shadow:var(--shadow)}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility .6s}
+.slide.on{opacity:1;visibility:visible}
+.slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,42,.15) 0%,rgba(12,22,42,.88) 78%)}
+.slide .txt{position:absolute;left:0;right:0;bottom:0;z-index:2;color:#fff;padding:18px 18px 44px}
+.slide .kick{display:inline-block;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+.slide h2{margin:0 0 6px;font-size:22px;line-height:1.2;font-weight:800}
+.slide p{margin:0 0 12px;font-size:13.5px;opacity:.95;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ctas{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 16px;border-radius:10px;font-weight:700;font-size:14px;white-space:nowrap}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:#ffb91f}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-zalo{background:var(--zalo);color:#fff}
+.btn-fb{background:#1877F2;color:#fff}
+.flogo + div + div{margin-top:8px}
+.btn-navy{background:var(--navy);color:#fff}
+.car-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.88);color:var(--navy);display:grid;place-items:center;font-size:22px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.car-arrow.prev{left:10px}.car-arrow.next{right:10px}
+.car-arrow{display:none}
+.dots{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;justify-content:center}
+.dots button{width:44px;height:44px;display:grid;place-items:center}
+.dots button span{width:8px;height:8px;border-radius:999px;background:rgba(255,255,255,.6);transition:width .3s}
+.dots button[aria-current="true"] span{width:22px;background:var(--gold)}
+
+.tile{position:relative;border-radius:var(--radius);overflow:hidden;min-height:84px;color:#fff;display:flex;align-items:flex-end;padding:10px 12px;box-shadow:var(--shadow);font-weight:700;font-size:13.5px;line-height:1.3}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,54,96,.92),rgba(29,54,96,.35));z-index:1}
+.tile span{position:relative;z-index:2}
+.tile small{display:block;font-weight:400;font-size:12px;opacity:.95}
+
+/* Section blocks */
+.block{margin-top:14px;padding:14px}
+.block-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.block-h h2{margin:0;font-size:18px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.2px}
+.more{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:600;color:var(--navy);white-space:nowrap}
+.more:hover{text-decoration:underline}
+
+.hs{display:grid;grid-auto-flow:column;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:thin}
+.hs>*{scroll-snap-align:start}
+.quick{grid-auto-columns:92px}
+.qk{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:10px 4px;border-radius:12px;min-height:100px}
+.qk:hover{background:#F1F4F8}
+.qk .ib{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#FFF4D9;color:var(--navy)}
+.qk .ib .ic{width:26px;height:26px}
+.qk b{font-size:12.5px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qk small{display:none;font-size:12px;color:var(--muted);line-height:1.35}
+
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.cat{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:8px 4px;border-radius:12px;min-height:44px}
+.cat:hover{background:#F1F4F8}
+.cat .im{width:100%;max-width:96px;aspect-ratio:1;border-radius:50%;background:#EEF2F7;display:grid;place-items:center;overflow:hidden;border:2px solid transparent}
+.cat:hover .im{border-color:var(--gold)}
+.cat img{width:78%;height:78%;object-fit:contain}
+.cat b{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.25}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:#F7F8FA;font-size:13.5px;font-weight:600;color:var(--text);position:relative}
+.chip::after{content:"";position:absolute;inset:-2px 0}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+
+.prow{grid-auto-columns:minmax(158px,47%)}
+.pc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;transition:box-shadow .2s,border-color .2s}
+.pc:hover{box-shadow:0 6px 18px rgba(16,30,54,.12);border-color:#d5dbe3}
+.pc.flash{box-shadow:0 0 0 3px var(--gold)}
+.pc .pi{aspect-ratio:1;display:grid;place-items:center;margin-bottom:8px}
+.pc .pi img{width:92%;height:92%;object-fit:contain}
+.pc h3{margin:0 0 6px;font-size:14px;font-weight:600;line-height:1.35;min-height:2.7em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc .price{font-size:18px;font-weight:800;color:var(--gold-dark);margin-bottom:6px;line-height:1.2}
+.pc .spec{background:#F3F4F6;border-radius:6px;padding:5px 8px;font-size:12.5px;color:var(--muted);margin-bottom:2px}
+.pc .wh{display:flex;align-items:center;min-height:44px;font-size:12.5px;color:var(--navy);font-weight:600;text-align:left;text-decoration:underline;text-underline-offset:2px}
+.pc .acts{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pc .acts a{min-height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:4px;font-weight:700;font-size:13.5px}
+.pc .acts .ic{width:18px;height:18px}
+.pc-link{display:block;color:inherit;text-decoration:none;border-radius:8px}
+.pc-link:hover h3{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
+.pc .pi.noimg img,.pd-img.noimg img,.pd-rel .noimg img{width:80%;height:auto;object-fit:contain;border-radius:8px}
+.pc .pi.noimg,.pd-img.noimg,.pd-rel .noimg{background:var(--navy);border-radius:8px}
+.pc .price.lh{color:var(--navy);font-size:16px}
+.pc .more-d{display:flex;align-items:center;min-height:36px;font-size:13px;font-weight:700;color:var(--navy)}
+/* Product detail */
+.pd-bd{position:fixed;inset:0;background:rgba(10,20,40,.55);z-index:120}
+.pd{position:fixed;inset:0;z-index:121;background:#fff;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+body.pd-open{overflow:hidden}
+.pd-top{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#fff;padding:4px 8px}
+.pd-back{color:#fff;font-weight:700;font-size:15px;min-height:44px;padding:0 10px}
+.pd-x{color:#fff;font-size:28px;width:44px;height:44px;line-height:1}
+.pd-body{padding:16px var(--gut) 32px;max-width:1080px;margin:0 auto}
+.pd-head{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.pd-body{overflow-x:clip}
+.pd-img{aspect-ratio:1;display:grid;place-items:center;background:#F7F8FA;border:1px solid var(--line);border-radius:12px;max-width:440px;width:100%;margin:0 auto}
+.pd-img img{width:88%;height:88%;object-fit:contain}
+.pd-cat{margin:0;font-size:12.5px;font-weight:700;color:var(--gold-dark);text-transform:uppercase;letter-spacing:.04em}
+.pd-info h2{margin:4px 0 6px;font-size:22px;line-height:1.3;color:var(--text)}
+.pd-q{margin:0 0 10px;color:var(--muted);font-size:14px}
+.pd-price{font-size:26px;font-weight:800;color:var(--gold-dark);line-height:1.2;background:#FFF8E6;border:1px solid #F6E2AE;border-radius:10px;padding:10px 12px}
+.pd-price.lh{color:var(--navy);background:#EEF2F8;border-color:#D9E1EE}
+.pd-price small{display:block;font-size:12.5px;font-weight:500;color:var(--muted);margin-top:2px}
+.pd-whs{font-size:13.5px;margin:10px 0;color:var(--muted)}
+.pd-whs a{color:var(--navy)}
+.pd-acts{display:grid;gap:8px}
+.pd-acts a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none}
+.pd-acts .ic{width:20px;height:20px}
+.pd-perks{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px;font-size:13.5px;color:var(--muted)}
+.pd-perks li{display:flex;align-items:center;gap:8px}
+.pd-perks .ic{width:18px;height:18px;color:var(--navy)}
+.pd-sec{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.pd-sec h3{margin:0 0 10px;font-size:17px;color:var(--navy)}
+.pd-sec p{margin:0;line-height:1.6}
+.pd-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.pd-list li{display:flex;gap:8px;line-height:1.5}
+.pd-list .ic{flex:none;width:18px;height:18px;margin-top:2px;color:#1a8a4a}
+.pd-list.ord{counter-reset:s}
+.pd-list.ord li{counter-increment:s}
+.pd-list.ord li::before{content:counter(s);flex:none;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center}
+.pd-tb{width:100%;border-collapse:collapse;font-size:14px}
+.pd-tb th,.pd-tb td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.pd-tb th{width:42%;font-weight:600;color:var(--muted);background:#F7F8FA}
+.pd-colors{display:flex;flex-wrap:wrap;gap:6px}
+.pd-colors span{border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:13px;background:#fff}
+.pd-note{font-size:12.5px;color:var(--muted);margin-top:14px !important}
+.pd-rel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(140px,42%);gap:10px;overflow-x:auto;padding-bottom:6px}
+.pd-rel a{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:10px;padding:8px;color:inherit;text-decoration:none}
+.pd-rel span{aspect-ratio:1;display:grid;place-items:center}
+.pd-rel img{width:90%;height:90%;object-fit:contain}
+.pd-rel b{font-size:13px;font-weight:600;line-height:1.35}
+.pd-rel small{font-size:13px;font-weight:700;color:var(--gold-dark)}
+@media (min-width:768px){
+  .pd{inset:24px;border-radius:16px;max-width:1080px;margin:0 auto}
+  .pd-top{border-radius:16px 16px 0 0}
+  .pd-head{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  .pd-acts{grid-template-columns:1fr 1fr}
+  .pd-acts a:first-child{grid-column:1 / -1}
+  .pd-rel{grid-auto-flow:row;grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+.note{margin:12px 0 0;font-size:13px;color:var(--muted);font-style:italic}
+
+.strip{position:relative;margin-top:14px;border-radius:var(--radius);overflow:hidden;color:#fff;min-height:150px;display:flex;align-items:center;box-shadow:var(--shadow)}
+.strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,42,75,.95) 0%,rgba(22,42,75,.75) 60%,rgba(22,42,75,.35) 100%);z-index:1}
+.strip .in{position:relative;z-index:2;padding:20px 18px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.strip h2{margin:0;font-size:20px;font-weight:800;line-height:1.25}
+.strip p{margin:0;font-size:14px;opacity:.95}
+
+.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.photos figure{margin:0;border-radius:10px;overflow:hidden;background:#EEF2F7}
+.photos img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.photos figcaption{padding:8px 10px;font-size:13px;font-weight:600;color:var(--text)}
+.photos .ph-btn{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.ph-more-wrap{display:flex;justify-content:center;margin-top:12px}
+.ph-more{min-height:44px;padding:0 22px;border-radius:999px;border:1.5px solid var(--navy);color:var(--navy);font-weight:700;background:#fff}
+.ph-more[hidden]{display:none}
+.lb{position:fixed;inset:0;z-index:130;background:rgba(5,12,25,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 8px 16px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:calc(100% - 48px);object-fit:contain;border-radius:8px}
+.lb p{color:#fff;margin:10px 0 0;font-size:14px;text-align:center}
+.lb .lb-x{position:absolute;top:6px;right:6px;width:48px;height:48px;color:#fff;font-size:30px}
+.lb .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:64px;color:#fff;font-size:40px;background:rgba(255,255,255,.08);border-radius:8px}
+.lb .lb-prev{left:6px}.lb .lb-next{right:6px}
+
+/* Footer */
+footer{background:#fff;margin-top:20px;border-top:3px solid var(--gold);padding:24px 0 calc(var(--navh) + 20px + env(safe-area-inset-bottom))}
+.fcols{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+footer h2{font-size:15px;font-weight:800;margin:0 0 8px;color:var(--navy)}
+footer ul{list-style:none;margin:0;padding:0}
+.hot li a,.hot li>div{display:flex;flex-direction:column;justify-content:center;min-height:44px;padding:2px 0}
+.hot small{font-size:12.5px;color:var(--muted)}
+.hot b{font-size:15px;color:var(--navy);font-weight:700;word-break:break-word}
+.hot a:hover b{text-decoration:underline}
+.flinks a{display:flex;align-items:center;min-height:44px;font-size:14px}
+.flinks a:hover{color:var(--navy);text-decoration:underline}
+.finfo li{font-size:14px;margin-bottom:10px}
+.finfo b{color:var(--navy)}
+.flogo{background:var(--navy);border-radius:10px;padding:10px 14px;display:inline-flex;margin-bottom:12px}
+.flogo img{height:40px;width:auto}
+.legal{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);text-align:center;font-size:12.5px;color:var(--muted);line-height:1.6}
+.legal p{margin:0 0 6px}
+
+/* Bottom nav */
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:75;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 12px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(5,1fr);padding-bottom:env(safe-area-inset-bottom)}
+.bnav a,.bnav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;height:var(--navh);font-size:11.5px;font-weight:600;color:var(--navy)}
+.bnav .call{color:var(--navy)}
+.bnav .call .ic{background:var(--gold);border-radius:50%;padding:5px;width:32px;height:32px}
+.bnav button[aria-expanded="true"]{color:var(--gold-dark)}
+
+/* Floating */
+.fabs{position:fixed;right:12px;bottom:calc(var(--navh) + 12px + env(safe-area-inset-bottom));z-index:76;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fab{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.fab.top{background:#fff;color:var(--navy)}
+.fab.top[hidden]{display:none}
+.fab.ct{background:var(--zalo);color:#fff;width:auto;border-radius:999px;padding:0 16px;display:flex;gap:6px;font-weight:700;font-size:14px}
+.pop{position:fixed;right:12px;bottom:calc(var(--navh) + 72px + env(safe-area-inset-bottom));z-index:95;width:min(300px,calc(100vw - 24px));background:#fff;border-radius:14px;box-shadow:0 12px 36px rgba(0,0,0,.25);padding:14px}
+.pop[hidden]{display:none}
+.pop h2{margin:0 0 4px;font-size:15px;color:var(--navy)}
+.pop p{margin:0 0 10px;font-size:13px;color:var(--muted)}
+.pop a{display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 12px;border-radius:10px;margin-top:8px;font-weight:700;font-size:14px;word-break:break-all}
+.pop .x{position:absolute;right:6px;top:6px;width:44px;height:44px;font-size:22px;color:var(--muted)}
+
+/* ≥ 600 */
+@media (min-width:600px){
+  .prow{grid-auto-columns:minmax(180px,31%)}
+  .photos{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .car{aspect-ratio:16/8}
+  .slide h2{font-size:28px}
+  .slide .txt{padding:24px 28px 44px;max-width:620px}
+  .slide::after{background:linear-gradient(90deg,rgba(12,22,42,.9) 0%,rgba(12,22,42,.55) 55%,rgba(12,22,42,.1) 100%)}
+  .car-arrow{display:grid}
+  .fcols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip h2{font-size:24px}
+}
+/* ≥ 768: desktop header, no bottom nav */
+@media (min-width:768px){
+  .hbtn,.hcall,.hzalo{display:inline-flex}
+  .logo img{height:42px}
+  .search{position:relative}
+  .sdrop{left:0;right:0;top:calc(100% + 6px)}
+  .bnav{display:none}
+  footer{padding-bottom:24px}
+  .fabs{bottom:calc(20px + env(safe-area-inset-bottom));right:20px}
+  .pop{bottom:84px;right:20px}
+  .cat-panel{position:absolute;left:var(--gut);right:auto;top:calc(100% + 4px);bottom:auto;width:300px;border-radius:12px;box-shadow:0 12px 36px rgba(0,0,0,.25)}
+  .quick{grid-auto-flow:row;grid-template-columns:repeat(6,minmax(0,1fr));overflow:visible}
+  .qk small{display:block}
+  .cats{gap:14px}
+  .cat b{font-size:14px}
+  .block{padding:18px}
+  .block-h h2{font-size:20px}
+}
+@media (min-width:768px) and (max-width:1023px){
+  .hcall small{display:none}
+}
+/* ≥ 1024: three-column hero, product grid */
+@media (min-width:1024px){
+  .hero{grid-template-columns:230px minmax(0,1fr) 270px;align-items:stretch}
+  .side{display:block;position:relative;padding:6px;z-index:20}
+  .side ul{list-style:none;margin:0;padding:0}
+  .side li>a{display:flex;align-items:center;gap:10px;min-height:44px;padding:4px 10px;border-radius:8px;font-weight:600;font-size:14px}
+  .side li>a .ic{color:var(--navy)}
+  .side li>a .chev{margin-left:auto;color:#8b95a3;font-size:18px}
+  .side li:hover>a,.side li:focus-within>a{background:#F1F4F8;color:var(--navy)}
+  .fly{display:none;position:absolute;left:100%;top:0;min-height:100%;width:560px;padding-left:8px}
+  .side li:hover>.fly,.side li:focus-within>.fly{display:block}
+  .fly-in{background:#fff;border-radius:var(--radius);box-shadow:0 12px 36px rgba(16,30,54,.22);padding:16px;min-height:100%}
+  .fly h3{margin:0 0 10px;font-size:16px;color:var(--navy)}
+  .fly-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .fly-grid a{display:flex;align-items:center;gap:10px;padding:6px;border-radius:8px;min-height:56px}
+  .fly-grid a:hover,.fly-grid a:focus-visible{background:#F1F4F8}
+  .fly-grid img{width:46px;height:46px;object-fit:contain;flex:none}
+  .fly-grid b{display:block;font-size:13.5px;font-weight:600;line-height:1.3}
+  .fly-grid small{font-size:12.5px;color:var(--gold-dark);font-weight:700}
+  .fly .all{display:inline-flex;margin-top:10px;min-height:40px;align-items:center;font-weight:700;color:var(--navy);font-size:14px}
+  .car{aspect-ratio:auto;min-height:390px}
+  .hero-right{grid-template-columns:1fr;grid-template-rows:auto 1fr 1fr;gap:10px}
+  .welcome{display:block;padding:14px}
+  .welcome h2{margin:0 0 2px;font-size:15px;color:var(--navy)}
+  .welcome p{margin:0 0 6px;font-size:12.5px;color:var(--muted)}
+  .welcome a{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:36px;border-top:1px dashed var(--line);font-size:13px}
+  .welcome a span{color:var(--muted)}
+  .welcome a b{color:var(--navy);font-weight:700;white-space:nowrap}
+  .welcome a:hover b{text-decoration:underline}
+  .tile{min-height:0}
+  .prow{grid-auto-flow:row;grid-template-columns:repeat(5,minmax(0,1fr));overflow:visible}
+  .photos{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .fcols{grid-template-columns:1.3fr 1fr 1.3fr 1fr}
+  .strip .in{flex-direction:row;align-items:center;justify-content:space-between;width:100%;padding:24px 32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker{animation:none}
+  .promo{overflow-x:auto}
+  .slide{transition:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Bỏ qua tới nội dung chính</a>
+
+<!-- Thanh khuyến mãi / giá trị -->
+<div class="promo" aria-label="Cam kết của Đại Kiên">
+  <div class="ticker">
+    <ul>
+      <li>Giá bán lẻ công khai</li>
+      <li>Giao TP. Hồ Chí Minh &amp; miền Nam</li>
+      <li>Tư vấn chọn sơn miễn phí qua Zalo</li>
+      <li>Báo giá riêng cho công trình</li>
+      <li>Giá bán lẻ công khai</li>
+      <li>Giao TP. Hồ Chí Minh &amp; miền Nam</li>
+      <li>Tư vấn chọn sơn miễn phí qua Zalo</li>
+      <li>Báo giá riêng cho công trình</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>Giá bán lẻ công khai</li>
+      <li>Giao TP. Hồ Chí Minh &amp; miền Nam</li>
+      <li>Tư vấn chọn sơn miễn phí qua Zalo</li>
+      <li>Báo giá riêng cho công trình</li>
+      <li>Giá bán lẻ công khai</li>
+      <li>Giao TP. Hồ Chí Minh &amp; miền Nam</li>
+      <li>Tư vấn chọn sơn miễn phí qua Zalo</li>
+      <li>Báo giá riêng cho công trình</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#top" aria-label="Đại Kiên – về đầu trang">
+      <img src="assets/logo-dai-kien.png" alt="Đại Kiên – Nhà phân phối sơn" width="122" height="42">
+    </a>
+    <button class="hbtn" type="button" data-cat-toggle aria-expanded="false" aria-controls="catPanel">
+      <span class="ic" data-ic="menu"></span>Danh mục
+    </button>
+    <div class="search">
+      <form role="search" id="searchForm" autocomplete="off">
+        <label class="sr" for="q">Tìm sản phẩm sơn</label>
+        <input id="q" type="search" placeholder="Bạn cần tìm sơn gì?" aria-controls="sdrop" aria-expanded="false" aria-autocomplete="list">
+        <button type="submit" aria-label="Tìm kiếm"><span class="ic" data-ic="search"></span></button>
+      </form>
+    </div>
+    <div id="sdrop" class="sdrop" role="listbox" aria-label="Kết quả tìm kiếm" hidden></div>
+    <a class="hcall" href="tel:0374390276"><span class="ic" data-ic="phone"></span><span><small>Gọi tư vấn</small><b>0374 390 276</b></span></a>
+    <a class="hzalo" href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ic" data-ic="chat"></span>Zalo</a>
+
+    <nav id="catPanel" class="cat-panel" aria-label="Danh mục sản phẩm" hidden>
+      <h2>Danh mục</h2>
+      <div id="catPanelList"></div>
+    </nav>
+  </div>
+</header>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<main id="main" class="wrap">
+
+  <!-- Hero row -->
+  <section class="hero" aria-label="Giới thiệu">
+    <nav class="side card" aria-label="Danh mục nhanh">
+      <ul id="sideList"></ul>
+    </nav>
+
+    <div class="car" id="car" aria-roledescription="carousel" aria-label="Thông điệp Đại Kiên">
+      <div class="slide on" role="group" aria-roledescription="slide" aria-label="1 / 3">
+        <img src="assets/anh/kho-1.jpg" alt="Hàng có sẵn trong kho Đại Kiên" fetchpriority="high">
+        <div class="txt">
+          <span class="kick">Nhà phân phối sơn</span>
+          <h2>Sơn sắt mạ kẽm • Sơn dầu</h2>
+          <p>Đại Kiên phân phối sơn kẽm, sơn dầu, dầu bóng và sơn sàn epoxy cho đại lý, công trình và khách lẻ tại TP. Hồ Chí Minh và miền Nam. Giá rõ ràng, tư vấn chọn đúng loại sơn.</p>
+          <div class="ctas">
+            <a class="btn btn-zalo" href="https://zalo.me/0374390276" target="_blank" rel="noopener">Nhắn Zalo</a>
+            <a class="btn btn-gold" href="tel:0374390276">Gọi 0374 390 276</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="2 / 3">
+        <img src="assets/anh/giao-cong-trinh.jpg" alt="Giao sơn tận công trình" loading="lazy">
+        <div class="txt">
+          <span class="kick">TP. Hồ Chí Minh &amp; miền Nam</span>
+          <h2>Giao tận công trình</h2>
+          <p>Đại Kiên giao sơn tại TP. Hồ Chí Minh và miền Nam. Nhắn Zalo để hỏi giao hàng cho công trình của bạn.</p>
+          <div class="ctas">
+            <a class="btn btn-gold" href="https://zalo.me/0374390276" target="_blank" rel="noopener">Hỏi giao hàng qua Zalo</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="3 / 3">
+        <img src="assets/anh/cong-trinh-cua-sat.jpg" alt="Cửa sắt hoàn thiện tại công trình" loading="lazy">
+        <div class="txt">
+          <span class="kick">Đại lý &amp; công trình</span>
+          <h2>Báo giá sỉ – liên hệ</h2>
+          <p>Nhận báo giá riêng cho đơn số lượng lớn. Đại lý liên hệ để nhận bảng giá sỉ.</p>
+          <div class="ctas">
+            <a class="btn btn-gold" href="tel:0374390276">Gọi 0374 390 276</a>
+            <a class="btn btn-white" href="https://zalo.me/0374390276" target="_blank" rel="noopener">Zalo</a>
+          </div>
+        </div>
+      </div>
+      <button class="car-arrow prev" type="button" aria-label="Ảnh trước">‹</button>
+      <button class="car-arrow next" type="button" aria-label="Ảnh tiếp theo">›</button>
+      <div class="dots" role="group" aria-label="Chọn ảnh">
+        <button type="button" aria-label="Ảnh 1" aria-current="true"><span></span></button>
+        <button type="button" aria-label="Ảnh 2" aria-current="false"><span></span></button>
+        <button type="button" aria-label="Ảnh 3" aria-current="false"><span></span></button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="welcome card">
+        <h2>Xin chào! Đại Kiên đây</h2>
+        <p>Tất cả các mục dùng chung một số:</p>
+        <a href="tel:0374390276"><span>Gọi mua hàng</span><b>0374 390 276</b></a>
+        <a href="tel:0374390276"><span>Tư vấn kỹ thuật</span><b>0374 390 276</b></a>
+        <a href="tel:0374390276"><span>Báo giá sỉ</span><b>0374 390 276</b></a>
+        <a href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span>Zalo</span><b>0374 390 276</b></a>
+        <a href="mailto:daikien18@gmail.com?subject=H%E1%BB%8Fi%20gi%C3%A1%20s%C6%A1n%20%C4%90%E1%BA%A1i%20Ki%C3%AAn"><span>Email</span><b>daikien18@gmail.com</b></a>
+      </div>
+      <a class="tile" href="#son-kem">
+        <img src="assets/anh/kho-2.jpg" alt="" loading="lazy">
+        <span>Giá bán lẻ công khai<small>Giá ghi trên từng sản phẩm</small></span>
+      </a>
+      <a class="tile" href="#lien-he">
+        <img src="assets/anh/kho-4.jpg" alt="" loading="lazy">
+        <span>Giao TP. HCM &amp; miền Nam<small>Hỏi giao hàng qua Zalo</small></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Quick links: 6 dịch vụ -->
+  <section class="block card" aria-labelledby="dv-h">
+    <h2 id="dv-h" class="sr">Dịch vụ của Đại Kiên</h2>
+    <div class="hs quick">
+      <a class="qk" href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ib"><span class="ic" data-ic="headset"></span></span><b>Tư vấn chọn sơn</b><small>Tư vấn loại sơn, định mức và cách thi công phù hợp</small></a>
+      <a class="qk" href="#lien-he"><span class="ib"><span class="ic" data-ic="doc"></span></span><b>Báo giá công trình</b><small>Nhận báo giá riêng cho đơn số lượng lớn</small></a>
+      <a class="qk" href="#lien-he"><span class="ib"><span class="ic" data-ic="store"></span></span><b>Dành cho đại lý</b><small>Liên hệ để nhận bảng giá sỉ</small></a>
+      <a class="qk" href="#lien-he"><span class="ib"><span class="ic" data-ic="truck"></span></span><b>Giao hàng</b><small>TP. Hồ Chí Minh và miền Nam</small></a>
+      <a class="qk" href="#son-kem"><span class="ib"><span class="ic" data-ic="tag"></span></span><b>Giá rõ ràng</b><small>Giá bán lẻ công khai trên từng sản phẩm</small></a>
+      <a class="qk" href="#lien-he"><span class="ib"><span class="ic" data-ic="bolt"></span></span><b>Liên hệ nhanh</b><small>Gọi, Zalo hoặc Email</small></a>
+    </div>
+  </section>
+
+  <!-- Danh mục nổi bật -->
+  <section class="block card" aria-labelledby="dm-h">
+    <div class="block-h"><h2 id="dm-h">Danh mục sản phẩm</h2></div>
+    <div class="cats" id="catTiles"></div>
+  </section>
+
+  <!-- Sơn kẽm -->
+  <section class="block card" id="son-kem" aria-labelledby="h-son-kem">
+    <div class="block-h"><h2 id="h-son-kem">Sơn kẽm</h2><a class="more" href="#son-kem" data-reset="son-kem">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc sơn kẽm">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button>
+      <button class="chip" type="button" data-f="nho" aria-pressed="false">Lon nhỏ</button>
+      <button class="chip" type="button" data-f="lon" aria-pressed="false">Thùng &amp; bộ lớn</button>
+      <button class="chip" type="button" data-f="1k" aria-pressed="false">1K</button>
+      <button class="chip" type="button" data-f="2k" aria-pressed="false">2K</button>
+    </div>
+    <div class="hs prow" data-group="son-kem"></div>
+  </section>
+
+  <!-- Banner strip -->
+  <section class="strip" aria-labelledby="strip-h">
+    <img src="assets/anh/kho-3.jpg" alt="" loading="lazy">
+    <div class="in">
+      <div>
+        <h2 id="strip-h">Đại lý &amp; công trình – nhận báo giá sỉ riêng</h2>
+        <p>Nhắn Zalo hoặc gọi 0374 390 276 để nhận báo giá cho đơn số lượng lớn.</p>
+      </div>
+      <a class="btn btn-gold" href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ic" data-ic="chat"></span>Nhắn Zalo</a>
+    </div>
+  </section>
+
+  <!-- Sơn dầu -->
+  <section class="block card" id="son-dau" aria-labelledby="h-son-dau">
+    <div class="block-h"><h2 id="h-son-dau">Sơn dầu</h2><a class="more" href="#son-dau">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc sơn dầu"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
+    <div class="hs prow" data-group="son-dau"></div>
+  </section>
+
+  <!-- Dầu bóng -->
+  <section class="block card" id="dau-bong" aria-labelledby="h-dau-bong">
+    <div class="block-h"><h2 id="h-dau-bong">Dầu bóng</h2><a class="more" href="#dau-bong">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc dầu bóng"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
+    <div class="hs prow" data-group="dau-bong"></div>
+  </section>
+
+  <!-- Sơn epoxy -->
+  <section class="block card" id="son-epoxy" aria-labelledby="h-son-epoxy">
+    <div class="block-h"><h2 id="h-son-epoxy">Sơn epoxy</h2><a class="more" href="#son-epoxy">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc sơn epoxy"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
+    <div class="hs prow" data-group="son-epoxy"></div>
+  </section>
+
+  <!-- Sơn lót & chống rỉ -->
+  <section class="block card" id="son-lot" aria-labelledby="h-son-lot">
+    <div class="block-h"><h2 id="h-son-lot">Sơn lót &amp; chống rỉ</h2><a class="more" href="#son-lot">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc sơn lót"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
+    <div class="hs prow" data-group="son-lot"></div>
+  </section>
+
+  <!-- Sơn chống nóng -->
+  <section class="block card" id="son-chong-nong" aria-labelledby="h-son-chong-nong">
+    <div class="block-h"><h2 id="h-son-chong-nong">Sơn chống nóng</h2><a class="more" href="#son-chong-nong">Xem tất cả ›</a></div>
+    <div class="chips" role="group" aria-label="Lọc sơn chống nóng"><button class="chip" type="button" aria-pressed="true">Tất cả</button></div>
+    <div class="hs prow" data-group="son-chong-nong"></div>
+    <p class="note">Giá bán lẻ áp dụng từ 01/11/2026 và có thể điều chỉnh; vui lòng liên hệ xác nhận trước khi đặt hàng. Sản phẩm ghi "Liên hệ" chưa có giá niêm yết, vui lòng gọi hoặc nhắn Zalo để nhận báo giá. Thông tin sản phẩm mang tính tham khảo theo nhà sản xuất.</p>
+  </section>
+
+  <!-- Hình ảnh thực tế -->
+  <section class="block card" id="hinh-anh" aria-labelledby="h-anh">
+    <div class="block-h"><h2 id="h-anh">Hình ảnh thực tế</h2><span class="more" id="phCount"></span></div>
+    <div class="chips" role="group" aria-label="Lọc hình ảnh">
+      <button class="chip" type="button" data-pf="all" aria-pressed="true">Tất cả</button>
+      <button class="chip" type="button" data-pf="kho" aria-pressed="false">Kho hàng</button>
+      <button class="chip" type="button" data-pf="ct" aria-pressed="false">Công trình</button>
+      <button class="chip" type="button" data-pf="xuong" aria-pressed="false">Xưởng kết cấu thép</button>
+    </div>
+    <div class="photos" id="photos"></div>
+    <div class="ph-more-wrap"><button class="ph-more" id="phMore" type="button">Xem thêm ảnh</button></div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="lien-he">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <h2>Tổng đài hỗ trợ</h2>
+        <ul class="hot">
+          <li><a href="tel:0374390276"><small>Gọi mua hàng</small><b>0374 390 276</b></a></li>
+          <li><a href="tel:0374390276"><small>Tư vấn kỹ thuật / chọn sơn</small><b>0374 390 276</b></a></li>
+          <li><a href="tel:0374390276"><small>Báo giá sỉ, đại lý, công trình</small><b>0374 390 276</b></a></li>
+          <li><a href="https://zalo.me/0374390276" target="_blank" rel="noopener"><small>Zalo</small><b>0374 390 276</b></a></li>
+          <li><a href="mailto:daikien18@gmail.com?subject=H%E1%BB%8Fi%20gi%C3%A1%20s%C6%A1n%20%C4%90%E1%BA%A1i%20Ki%C3%AAn"><small>Email</small><b>daikien18@gmail.com</b></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61596303113021" target="_blank" rel="noopener"><small>Facebook</small><b>Đại Kiên</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Danh mục sản phẩm</h2>
+        <ul class="flinks">
+          <li><a href="#son-kem">Sơn kẽm</a></li>
+          <li><a href="#son-dau">Sơn dầu</a></li>
+          <li><a href="#dau-bong">Dầu bóng</a></li>
+          <li><a href="#son-epoxy">Sơn epoxy</a></li>
+          <li><a href="#son-lot">Sơn lót &amp; chống rỉ</a></li>
+          <li><a href="#son-chong-nong">Sơn chống nóng</a></li>
+          <li><a href="#hinh-anh">Hình ảnh thực tế</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Thông tin &amp; chính sách</h2>
+        <ul class="finfo">
+          <li><b>Khu vực giao hàng:</b> TP. Hồ Chí Minh và miền Nam.</li>
+          <li><b>Đặt hàng:</b> qua Gọi, Zalo hoặc Email.</li>
+          <li><b>Ghi chú giá:</b> Giá bán lẻ áp dụng từ 01/11/2026 và có thể điều chỉnh; vui lòng liên hệ xác nhận trước khi đặt hàng.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Kết nối</h2>
+        <div class="flogo"><img src="assets/logo-dai-kien.png" alt="Đại Kiên" width="116" height="40" loading="lazy"></div>
+        <div><a class="btn btn-zalo" href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ic" data-ic="chat"></span>Zalo 0374 390 276</a></div>
+        <div><a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61596303113021" target="_blank" rel="noopener"><span class="ic" data-ic="fb"></span>Facebook Đại Kiên</a></div>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Đại Kiên – Nhà phân phối sơn · Hotline 0374 390 276 · Email daikien18@gmail.com</p>
+      <p>Nhà sản xuất: Công ty TNHH SX TM Sơn Trần Gia · Địa chỉ: 158 Nguyễn Thị Sáng, Ấp 6, Xã Đông Thạnh, Hóc Môn, TP. Hồ Chí Minh · MST: 0315570250</p>
+      <p>© 2026 Đại Kiên</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile bottom nav -->
+<nav class="bnav" aria-label="Điều hướng nhanh">
+  <a href="#top"><span class="ic" data-ic="home"></span>Trang chủ</a>
+  <button type="button" data-cat-toggle aria-expanded="false" aria-controls="catPanel"><span class="ic" data-ic="grid"></span>Danh mục</button>
+  <a class="call" href="tel:0374390276"><span class="ic" data-ic="phone"></span>Gọi</a>
+  <a href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ic" data-ic="chat"></span>Zalo</a>
+  <button type="button" data-contact aria-expanded="false" aria-controls="pop"><span class="ic" data-ic="mail"></span>Liên hệ</button>
+</nav>
+
+<!-- Floating -->
+<div class="fabs">
+  <button class="fab top" id="toTop" type="button" aria-label="Lên đầu trang" hidden><span class="ic" data-ic="up"></span></button>
+  <button class="fab ct" type="button" data-contact aria-expanded="false" aria-controls="pop"><span class="ic" data-ic="chat"></span>Liên hệ</button>
+</div>
+<!-- Xem ảnh lớn -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Xem ảnh" hidden>
+  <button class="lb-x" type="button" aria-label="Đóng">×</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Ảnh trước">‹</button>
+  <img id="lbImg" src="" alt="">
+  <p id="lbCap"></p>
+  <button class="lb-nav lb-next" type="button" aria-label="Ảnh sau">›</button>
+</div>
+
+<!-- Chi tiết sản phẩm -->
+<div class="pd-bd" id="pdBd" hidden></div>
+<div class="pd" id="pd" role="dialog" aria-modal="true" aria-labelledby="pd-h" hidden>
+  <div class="pd-top">
+    <button class="pd-back" type="button" data-pd-close aria-label="Quay lại">‹ Quay lại</button>
+    <button class="pd-x" type="button" data-pd-close aria-label="Đóng">×</button>
+  </div>
+  <div class="pd-body" id="pdBody"></div>
+</div>
+
+<div class="pop" id="pop" role="dialog" aria-labelledby="pop-h" hidden>
+  <button class="x" type="button" aria-label="Đóng">×</button>
+  <h2 id="pop-h">Liên hệ Đại Kiên</h2>
+  <p>Cần giá sỉ hoặc tư vấn? Chọn cách liên hệ:</p>
+  <a class="btn-gold" href="tel:0374390276"><span class="ic" data-ic="phone"></span>Gọi 0374 390 276</a>
+  <a class="btn-zalo" href="https://zalo.me/0374390276" target="_blank" rel="noopener"><span class="ic" data-ic="chat"></span>Zalo 0374 390 276</a>
+  <a class="btn-navy" href="mailto:daikien18@gmail.com?subject=H%E1%BB%8Fi%20gi%C3%A1%20s%C6%A1n%20%C4%90%E1%BA%A1i%20Ki%C3%AAn"><span class="ic" data-ic="mail"></span>daikien18@gmail.com</a>
+  <a class="btn-fb" href="https://www.facebook.com/profile.php?id=61596303113021" target="_blank" rel="noopener"><span class="ic" data-ic="fb"></span>Facebook Đại Kiên</a>
+</div>
+
+<script>
+(function(){
+  var TEL='tel:0374390276', ZALO='https://zalo.me/0374390276', FB='https://www.facebook.com/profile.php?id=61596303113021';
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var I={
+    can:'<path d="M5 8h14v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M5 8l2-4h10l2 4"/><path d="M9 13h6"/>',
+    drop:'<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>',
+    spark:'<path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>',
+    layers:'<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
+    doc:'<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/>',
+    store:'<path d="M4 9l2-5h12l2 5"/><path d="M4 9h16v11H4z"/><path d="M9 20v-6h6v6"/>',
+    phone:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+    chat:'<path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8"/>',
+    mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+    truck:'<path d="M3 6h11v10H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
+    tag:'<path d="M3 12V4h8l10 10-8 8z"/><circle cx="8" cy="8" r="1.5"/>',
+    home:'<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>',
+    grid:'<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/>',
+    menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+    search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
+    up:'<path d="M12 19V5M5 12l7-7 7 7"/>',
+    headset:'<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>',
+    bolt:'<path d="M13 3L5 14h6l-1 7 8-11h-6z"/>',
+    shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+    sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+    check:'<path d="M5 12l4 4 10-10"/>',
+    fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/>'
+  };
+  function ic(n){return '<span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24">'+I[n]+'</svg></span>';}
+  document.querySelectorAll('[data-ic]').forEach(function(el){el.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+I[el.getAttribute('data-ic')]+'</svg>';});
+
+  var G=[
+    {id:'son-kem',n:'Sơn kẽm',ic:'can',img:'son-kem-1k-900g.png'},
+    {id:'son-dau',n:'Sơn dầu',ic:'drop',img:'son-dau-tong-hop-1kg.png'},
+    {id:'dau-bong',n:'Dầu bóng',ic:'spark',img:'dau-bong-2k-1kg.png'},
+    {id:'son-epoxy',n:'Sơn epoxy',ic:'layers',img:'son-san-epoxy-20kg.png'},
+    {id:'son-lot',n:'Sơn lót & chống rỉ',ic:'shield',img:'son-lot-kem-epoxy-sapa.png'},
+    {id:'son-chong-nong',n:'Sơn chống nóng',ic:'sun',img:'son-chong-nong-ruby.jpg'}
+  ];
+  /* Bảng màu Ruby (theo bảng màu của nhà sản xuất) */
+  var RUBY_COLORS=['Xám lợt XF026','Xám trắng 120','Xanh da trời 710','Xanh chuối 653','Hồng cánh sen 131','Trắng bóng 111','Xám đậm XF027','Xám ghi 122','Xanh 640','Xanh ngọc 583','Cam 233','Màu kem 002','Xingfa nhạt 11','Xám xanh 610','Xanh Yamaha 715','Xanh 31A','Đỏ 210','Kem nhạt 9191','Xingfa đậm 22','Xám 4241','Xanh dương 680','Xanh cẩm thạch 612','Cafe sữa 355','Kem đậm 303','Xingfa 671','Xám 910','Màu tím 611','Xanh lá 618','Giả gỗ 836','Vàng chanh 1811','Xingfa nâu đỏ 503','Xám đậm 940','Đen bóng 333','Xanh 675','Nâu cánh gián 221','Vàng nghệ 1809','Nhũ vàng 1823','Nhũ bạc 1824'];
+  var C1K=['Xám 120','Xám 122','Xanh Yamaha 715','Dương 680','Xám 910','Xám 4241','Xám 3242','Xám 940','Xingfa đậm','Xám Xingfa'];
+  var CDAU=['Trắng 111','Kem 301','Kem 9191','Vàng chanh 1811','Vàng nghệ 1809','Đỏ 210','Cam 233','Xanh 710','Xanh 618','Dương 680','Xám 120','Xám 910','Xám 3242','Đen mờ'];
+  var C2K=['Xám trắng 120','Xám ghi 122','Xám lợt XF026'];
+  var KEM_DAU={
+    m:'Sơn dầu cao cấp chuyên dùng cho sắt mạ kẽm, giúp chống ăn mòn, đặc biệt tại các vị trí mối hàn. Không cần sơn lót, đa dạng màu sắc, giúp kéo dài tuổi thọ và tăng tính thẩm mỹ cho công trình.',
+    dd:['Không cần sơn lót, tiết kiệm thời gian và vật tư','Bám dính tốt trên sắt, thép hộp mạ kẽm','Chống ăn mòn, rỉ sét, bảo vệ lớp kẽm','Nhiều màu sắc nổi bật, bề mặt sáng bóng','Dòng 1 thành phần: chỉ cần pha dung môi theo tỉ lệ là dùng được'],
+    ud:['Sắt, thép hộp mạ kẽm trong xây dựng','Cửa, cổng, hàng rào, lan can','Công trình dân dụng ở môi trường bình thường'],
+    hd:['Làm sạch và xử lý bề mặt đúng kỹ thuật (bụi, dầu mỡ, tạp chất)','Bề mặt phải hoàn toàn khô ráo trước khi sơn','Pha dung môi theo tỉ lệ khuyến cáo, khuấy đều','Thi công trong điều kiện nhiệt độ, độ ẩm theo khuyến cáo của nhà sản xuất']
+  };
+  var K1={
+    m:'Sơn công nghiệp đa năng 1 thành phần (1K), không cần chất đóng rắn. Sơn trực tiếp lên sắt mạ kẽm không cần lót, dùng để trang trí và bảo vệ nhiều loại bề mặt.',
+    dd:['Bám dính tốt trên kim loại, sắt mạ kẽm, gỗ, nhựa, bê tông','Không cần pha chất đóng rắn, khuấy đều là dùng','Chịu thời tiết: tia UV, mưa, gió, nhiệt độ cao; bền màu lâu','Khô nhanh, rút ngắn thời gian chờ giữa các lớp','Chống ăn mòn và gỉ sét trên kim loại','Bề mặt mịn, độ bóng cao, dễ lau chùi'],
+    ud:['Cổng, hàng rào, lan can, cửa sắt, khung xe','Kết cấu thép, nhà xưởng, thiết bị máy móc công nghiệp','Đồ gỗ: bàn, ghế, tủ, cửa gỗ','Nhựa, composite, sàn và tường bê tông'],
+    hd:['Làm sạch bụi bẩn, dầu mỡ, rỉ sét; bề mặt khô ráo hoàn toàn','Khuấy đều sơn trước khi dùng','Pha loãng bằng xăng thơm hoặc dung môi chuyên dụng khoảng 10–20% tùy phương pháp','Thi công bằng súng phun, cọ hoặc con lăn; sơn 1–2 lớp để màu đều và che phủ tốt','Đậy kín nắp sau khi dùng, để nơi khô ráo, thoáng mát'],
+    ts:[['Độ bóng','Bán bóng – bóng'],['Khô bề mặt','4–6 giờ'],['Khô hoàn toàn','24 giờ'],['Pha loãng','10–20% dung môi']],
+    mau:C1K
+  };
+  var P=[
+    {id:1,g:'son-kem',n:'Sơn kẽm gốc dầu',q:'Lon 900g',p:'86.000 đ',img:'son-kem-goc-dau-900g.png',t:['nho'],d:Object.assign({mau:'ruby'},KEM_DAU)},
+    {id:2,g:'son-kem',n:'Sơn kẽm 1K',q:'Lon 900g',p:'97.000 đ',img:'son-kem-1k-900g.png',t:['nho','1k'],d:K1},
+    {id:3,g:'son-kem',n:'Sơn kẽm 1 thành phần',q:'Lon 900g',p:'97.000 đ',img:'son-kem-1tp-900g.png',t:['nho','1k'],d:{
+      m:'Sơn sắt mạ kẽm 1 thành phần (dòng Ruby Econs 24h), độ bóng cao, không cần sơn lót. Bám tốt trên sắt mạ kẽm, chống chịu thời tiết, hạn chế rỉ sét và xuống màu.',
+      dd:['Độ bóng cao, bề mặt sáng đẹp','Bám dính tốt trên sắt mạ kẽm','Không cần sơn lót, tiết kiệm thời gian và chi phí vật tư','Chống chịu thời tiết tốt, hạn chế rỉ sét và xuống màu'],
+      ud:['Cửa sắt, cổng sắt mạ kẽm, hàng rào, lan can','Khung nhà thép tiền chế, mái tôn, kết cấu kim loại','Sản phẩm cơ khí dân dụng và công nghiệp'],
+      hd:['Làm sạch bề mặt, loại bỏ bụi bẩn, dầu mỡ, tạp chất','Khuấy đều sơn trước khi dùng','Thi công bằng cọ, rulô hoặc súng phun','Sơn 1–2 lớp để đạt độ phủ và độ bóng tốt nhất'],
+      ts:[['Thời gian khô','Khoảng 24 giờ'],['Số lớp khuyến nghị','1–2 lớp']],mau:'ruby'}},
+    {id:4,g:'son-kem',n:'Sơn kẽm 2K',q:'Bộ 1 lít',p:'132.000 đ',img:'son-kem-2k-1l.png',t:['nho','2k'],d:{
+      m:'Sơn công nghiệp đa năng 2 thành phần (sơn + chất đóng rắn), không cần sơn lót. Sơn được trên hầu hết vật liệu, kể cả bề mặt trơn bóng như inox, sắt mạ kẽm. Màng sơn cứng tương tự sơn tĩnh điện.',
+      dd:['Không cần sơn lót','Bám dính tốt, khô nhanh','Màng sơn cứng, chịu va đập và tác động hóa học từ môi trường','Độ bóng cao, giữ màu bền, kháng tia UV, chống ố vàng','Giải pháp thay thế sơn tĩnh điện, thi công đơn giản hơn'],
+      ud:['Sắt, sắt mạ kẽm, inox, nhôm, kính, nhựa, gỗ','Kết cấu thép, máy móc, thiết bị','Phụ tùng xe, sản phẩm cần lớp phủ bền đẹp'],
+      hd:['Làm sạch bề mặt, loại bỏ bụi, dầu mỡ, rỉ sét; bề mặt khô ráo','Trộn sơn với chất đóng rắn theo tỉ lệ 4 : 1','Pha loãng bằng xăng thơm hoặc dung môi chuyên dụng nếu cần','Sơn nhiều lớp mỏng, chờ lớp trước khô rồi sơn lớp sau','Sơn đã pha chỉ dùng được trong vài giờ, nên pha vừa đủ'],
+      ts:[['Tỉ lệ pha','4 sơn : 1 chất đóng rắn'],['Khô bề mặt','Nhanh, dưới 30 phút (tham khảo)']],mau:C2K}},
+    {id:5,g:'son-kem',n:'Sơn dầu kẽm',q:'Thùng 18 lít',p:'1.540.000 đ',img:'son-dau-kem-18l.png',t:['lon'],d:Object.assign({},KEM_DAU,{
+      m:'Sơn sắt mạ kẽm dạng thùng lớn cho công trình. Chuyên dùng cho kim loại mạ kẽm, chống ăn mòn đặc biệt tại mối hàn, nhiều màu sắc, bề mặt sáng bóng.',
+      ud:['Sắt, thép hộp mạ kẽm trong xây dựng','Nhà xưởng, kết cấu thép, hàng rào, lan can quy mô lớn','Công trình dân dụng ở môi trường bình thường'],
+      ts:[['Quy cách','Thùng 18 lít']],mau:'ruby'})},
+    {id:6,g:'son-kem',n:'Sơn kẽm 1K',q:'Thùng 18 lít',p:'1.760.000 đ',img:'son-kem-1k-18l.png',t:['lon','1k'],d:Object.assign({},K1,{
+      m:'Sơn công nghiệp đa năng 1K dạng thùng 18 lít cho công trình. Độ bóng cao, khô nhanh, không cần chất đóng rắn, chỉ cần pha dung môi theo tỉ lệ phù hợp.',
+      ud:['Kết cấu thép, nhà xưởng','Cửa sắt, hàng rào, lan can quy mô lớn','Sắt mạ kẽm, inox, kính, nhựa, gỗ','Sản xuất thiết bị công nghiệp, gia công cơ khí']})},
+    {id:7,g:'son-kem',n:'Sơn kẽm 2K',q:'Bộ 20kg',p:'2.420.000 đ',img:'son-kem-2k-20kg.png',t:['lon','2k'],d:{
+      m:'Sơn công nghiệp đa năng 2 thành phần, bộ gồm thùng sơn 16kg và chất đóng rắn đi kèm. Phù hợp nhiều hạng mục sơn phủ công nghiệp.',
+      dd:['Bám dính tốt khi thi công đúng kỹ thuật','Bề mặt bóng, đẹp, đồng đều','Chống trầy xước','Kháng hóa chất, chịu thời tiết'],
+      ud:['Kết cấu thép, nhà xưởng, máy móc thiết bị','Sắt mạ kẽm, inox và các bề mặt kim loại','Công trình cần lớp phủ bền, cứng'],
+      hd:['Xử lý bề mặt sạch, khô','Pha đúng tỉ lệ sơn : chất đóng rắn = 4 : 1','Có thể thêm dung môi khoảng 10–20% tùy điều kiện thi công','Khuấy đều; thi công bằng phun, lăn hoặc quét','Chờ khô hoàn toàn trước khi sử dụng'],
+      ts:[['Tỉ lệ pha','4 sơn : 1 chất đóng rắn'],['Dung môi','10–20%'],['Thành phần bộ','Sơn 16kg + chất đóng rắn']],mau:C2K}},
+    {id:8,g:'son-dau',n:'Sơn dầu tổng hợp',q:'Lon 1kg',p:'72.000 đ',img:'son-dau-tong-hop-1kg.png',t:[],d:{
+      m:'Sơn gốc dầu Alkyd, phổ biến cho các ứng dụng cần độ bóng và độ bền cao. Dùng để trang trí và bảo vệ bề mặt gỗ, kim loại, sắt thép.',
+      dd:['Độ bám dính cao','Bề mặt sáng bóng, giữ màu và độ bóng lâu','Chống bụi và vết bẩn tốt','Chịu tác động bên ngoài, không bong tróc, ít phai màu','Thi công dễ bằng cọ, con lăn hoặc máy phun'],
+      ud:['Đồ nội thất, tủ bếp, đồ trang trí','Cửa, lan can, kim loại, sắt thép','Gỗ và bê tông trong công trình'],
+      hd:['Bề mặt sạch, khô ráo, không bụi bẩn và gỉ sét','Khuấy đều sơn trước khi dùng','Sơn lớp đầu, chờ khô hoàn toàn rồi sơn lớp thứ hai nếu cần','Thi công nơi thông gió tốt, dùng khẩu trang và găng tay bảo hộ'],
+      mau:CDAU}},
+    {id:9,g:'son-dau',n:'Sơn dầu tổng hợp',q:'Thùng 18kg',p:'1.045.000 đ',img:'son-dau-tong-hop-18kg.png',t:[],d:{
+      m:'Sơn dầu tổng hợp đa sắc màu, dạng thùng lớn cho công trình. Vừa trang trí vừa bảo vệ bề mặt lâu dài, độ bám dính tốt, độ bền cao.',
+      dd:['Độ bền cao, chống chịu mưa nắng và bụi bẩn','Đa dạng màu sắc, từ trung tính đến tươi sáng','Hạn chế nước thấm, ẩm mốc','Dễ thi công'],
+      ud:['Nội thất: bàn, ghế, tủ gỗ','Ngoại thất: cửa, lan can, tường','Công nghiệp: thiết bị, máy móc, chống gỉ sét và ăn mòn','Bề mặt gỗ, kim loại, bê tông'],
+      hd:['Bề mặt sạch, khô ráo, không bụi bẩn và gỉ sét','Khuấy đều trước khi dùng','Sơn từng lớp đều, chờ khô rồi sơn lớp tiếp','Bảo quản nơi khô ráo, thoáng mát, tránh nguồn nhiệt'],
+      mau:CDAU}},
+    {id:10,g:'dau-bong',n:'Dầu bóng 2K',q:'Bộ 1kg',p:'154.000 đ',img:'dau-bong-2k-1kg.png',t:[],d:{
+      m:'Dầu bóng 2 thành phần hệ Acrylic, pha từ nhựa Polyol Acrylic và chất đóng rắn Polyisocyanate. Tạo lớp phủ ngoài bóng, sáng và bền, bảo vệ bề mặt sơn.',
+      dd:['Bề mặt bóng, sáng, bền','Chống trầy xước','Khô nhanh'],
+      ud:['Phủ bóng bảo vệ lớp sơn trên kim loại','Ô tô, xe máy và thiết bị cao cấp'],
+      hd:['Làm sạch bụi và chất bẩn, để bề mặt khô ráo','Trộn 4 phần dầu bóng với 1 phần chất đóng rắn','Pha loãng bằng xăng thơm hoặc dung môi tương tự'],
+      ts:[['Thời gian khô','Tối đa 0,5 giờ'],['Độ bền va đập','Tối thiểu 45 kg/cm²'],['Hàm lượng không bay hơi','50–60%'],['Độ bóng (góc 60°)','Tối thiểu 95'],['Tỉ lệ pha','4 : 1']]}},
+    {id:11,g:'son-epoxy',n:'Sơn sàn epoxy',q:'Bộ 20kg',p:'2.310.000 đ',img:'son-san-epoxy-20kg.png',t:[],d:{
+      m:'Sơn epoxy 2 thành phần hệ lăn (SAPA), thi công bằng rulô cho nền bê tông. Màng sơn dày khoảng 200–500 micron, bền, đẹp, dễ vệ sinh.',
+      dd:['Độ bám dính cao, chống mài mòn','Kháng hóa chất, kháng nước và dầu mỡ','Chịu va đập và tải trọng lớn','Chống trơn trượt ở mức cao, ít bám bụi, dễ vệ sinh','Lưu ý: kém bền màu khi chịu nắng trực tiếp, nên dùng trong nhà'],
+      ud:['Nền nhà xưởng, kho bãi, tầng hầm','Nhà máy thực phẩm, giải khát, dược phẩm, điện tử, cơ khí','Bãi đỗ xe, khu công nghiệp'],
+      hd:['Chuẩn bị nền: kiểm tra độ ẩm, vết nứt, dầu mỡ; mài tạo nhám, sửa chữa bề mặt','Lăn lớp lót epoxy (khoảng 50 µm)','Lăn lớp phủ thứ nhất (khoảng 50 µm), trám vá khuyết tật','Lăn lớp hoàn thiện (khoảng 50 µm) để bề mặt bóng đẹp','Kiểm tra, xử lý lỗi và nghiệm thu','Trang bị bảo hộ đầy đủ khi thi công'],
+      ts:[['Độ dày màng sơn','200–500 micron'],['Đi lại được sau','Khoảng 48 giờ'],['Xe qua lại sau','Khoảng 72 giờ']]}},
+    {id:12,g:'son-epoxy',n:'Sơn epoxy 2 thành phần SAPA',q:'Bộ lon (sơn + chất đóng rắn)',p:'',img:'son-epoxy-sapa-2tp.png',t:[],d:{
+      m:'Sơn epoxy 2 thành phần gồm sơn và chất đóng rắn. Hàm lượng chất đóng rắn cao giúp bề mặt sơn chắc, cứng; tổng hợp từ nhựa epoxy resin, bột màu, dung môi và phụ gia.',
+      dd:['Độ cứng cao, chống chịu va đập tốt','Bám dính rất tốt, không bong tróc','Màng sơn bóng đẹp, bền màu','Bảo vệ vật liệu trước va chạm mạnh và hóa chất ăn mòn','Chống thấm nước, chống ăn mòn, dễ vệ sinh'],
+      ud:['Nhà xưởng kết cấu thép, máy móc, container, cầu trục','Nền bê tông, gỗ, nhựa','Sản phẩm dùng trong nhà và ngoài trời'],
+      hd:['Mài, làm sạch và hút bụi bề mặt','Pha theo công thức: 4kg sơn + 1kg chất đóng rắn + 1kg dung môi','Thi công lớp lót, bả vá khuyết điểm, rồi sơn lớp phủ và lớp hoàn thiện','Bảo quản xa nguồn lửa, nhiệt; đậy kín nắp; để nơi khô ráo, xa tầm tay trẻ em'],
+      ts:[['Tỉ lệ pha','4 sơn : 1 chất đóng rắn : 1 dung môi (theo khối lượng)'],['Quy cách tham khảo','Bộ 4 lít (3 lít sơn + 1 lít đóng rắn) hoặc bộ 20 lít']],
+      mau:['Xám','Xanh đen','Ghi xám','Nâu','Màu khác theo yêu cầu']}},
+    {id:13,g:'son-lot',n:'Sơn lót kẽm epoxy SAPA',q:'Lon',p:'',img:'son-lot-kem-epoxy-sapa.png',t:[],d:{
+      m:'Sơn lót epoxy có bột kẽm, chuyên bảo vệ bề mặt kim loại khỏi ăn mòn và oxi hóa, đặc biệt là sắt thép mạ kẽm. Tạo lớp nền giúp lớp sơn phủ bên trên bám tốt hơn.',
+      dd:['Chống ăn mòn tốt nhờ có kẽm','Tăng độ bám dính cho lớp sơn phủ','Bảo vệ kim loại khỏi độ ẩm, muối và hóa chất','Chống thấm nước, chống tia UV và nấm mốc','Thi công dễ bằng cọ, con lăn hoặc súng phun, khô khá nhanh'],
+      ud:['Cốt thép, khung thép, kết cấu kim loại trong xây dựng','Thiết bị, kết cấu trong nhà máy, khu công nghiệp','Cầu, đường ray, hàng rào, cổng và bề mặt kim loại ngoài trời'],
+      hd:['Làm sạch bề mặt kim loại, khô ráo, không rỉ sét, bụi bẩn','Pha theo tỉ lệ của nhà sản xuất (nhãn lon: pha xăng Nhật hoặc xăng PU)','Thi công trong điều kiện nhiệt độ, độ ẩm phù hợp','Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp'],
+      ts:[['Sơn lớp tiếp theo sau','4–6 giờ'],['Màu (theo nhãn lon)','Xám epoxy']]}},
+    {id:14,g:'son-lot',n:'Sơn lót chống rỉ Ruby',q:'3 lít / 5 lít / 18 lít',p:'',img:'',t:[],d:{
+      m:'Sơn lót 1 thành phần sản xuất từ nhựa alkyd, oxide và phụ gia. Dùng làm lớp lót đầu tiên cho bề mặt thép chưa mạ kẽm, phù hợp kết cấu trong nhà và ngoài trời.',
+      dd:['Bám dính tốt','Màng sơn cứng và dẻo dai','Chịu thời tiết tốt','Dễ sử dụng'],
+      ud:['Lớp lót cho thép chưa mạ kẽm','Kết cấu thép trong nhà và ngoài trời'],
+      ts:[['Độ dày tiêu chuẩn','35 micron/lớp'],['Định mức','9,5 m²/lít'],['Khô (sờ tay)','4 giờ'],['Khô cứng','12 giờ'],['Sơn lớp kế tiếp','Tối thiểu 12 giờ, tối đa 6 tháng'],['Màu','Đỏ nâu']],
+      mau:['Đỏ nâu']}},
+    {id:15,g:'son-lot',n:'Sơn dầu chống rỉ tổng hợp Ruby',q:'Liên hệ',p:'',img:'',t:[],d:{
+      m:'Sơn gốc nhựa alkyd có chất chống rỉ chuyên dụng. Dùng làm lớp lót bảo vệ sắt thép trước khi sơn lớp hoàn thiện, ngăn oxy hóa và chống ăn mòn, hiệu quả cả trong thời tiết khắc nghiệt.',
+      dd:['Có thành phần chống oxy hóa và ức chế rỉ sét','Bám tốt trên sắt thép đã xử lý, không bong tróc','Dễ thi công bằng cọ, rulô hoặc súng phun; khô nhanh','Chỉ cần một lớp lót trước khi sơn phủ','Tương thích với sơn phủ dầu và sơn alkyd'],
+      ud:['Lót cho cửa sắt, lan can, hàng rào, kết cấu thép','Máy móc, khung giàn, cột trụ ngoài trời','Xây dựng dân dụng và công nghiệp; môi trường ven biển, nhiệt đới ẩm'],
+      hd:['Làm sạch bụi, dầu mỡ, rỉ sét bằng bàn chải sắt hoặc máy mài; bề mặt khô ráo','Pha dung môi chuyên dụng hoặc xăng công nghiệp 5–10% tùy phương pháp','Sơn một lớp lót bằng cọ, rulô hoặc súng phun','Sau 6–8 giờ có thể sơn lớp ngoài','Đậy kín nắp, để nơi khô mát, tránh nắng trực tiếp'],
+      ts:[['Pha loãng','5–10% dung môi'],['Sơn lớp phủ sau','6–8 giờ']]}},
+    {id:16,g:'son-chong-nong',n:'Sơn chống nóng Ruby',q:'1 lít / 4 lít / 18 lít',p:'',img:'son-chong-nong-ruby.jpg',t:[],d:{
+      m:'Sơn gốc nước giúp giảm nhiệt hấp thụ vào bề mặt và làm mát vật liệu được sơn. Phù hợp các bề mặt tiếp xúc trực tiếp với nắng như mái tôn, tường ngoài nhà, sân thượng.',
+      dd:['Giảm nhiệt độ bề mặt (nhà sản xuất công bố tới 10°C)','Chống thấm nước, hạn chế thấm dột, bong tróc','Chịu tia UV, hạn chế bạc màu','Chịu nhiệt tới 70°C, màng sơn không nứt nẻ','Dễ lau chùi, khô nhanh, dễ thi công'],
+      ud:['Mái tôn, vách tôn','Tường ngoài nhà, sân thượng, mái bê tông','Bề mặt kim loại, gỗ, bê tông; kết cấu, máy móc, thiết bị'],
+      hd:['Làm sạch và giữ bề mặt khô ráo','Khuấy đều, sản phẩm dùng ngay không cần pha','Sơn 1 lớp lót, để khô 2–4 giờ','Sơn 2–3 lớp hoàn thiện, khô 24 giờ','Vệ sinh dụng cụ và bảo quản đúng cách'],
+      ts:[['Độ bóng','Bán mờ, khoảng 30–40% (60°)'],['Hàm lượng chất rắn','45–50% theo thể tích'],['Khối lượng riêng','1,2–1,3 kg/lít'],['Khô bề mặt','2–4 giờ'],['Khô hoàn toàn','24 giờ'],['Độ dày màng','25–35 micron'],['Pha trộn','Dùng ngay, không cần pha']],
+      mau:['Trắng','Bạc','Xanh','Màu khác theo yêu cầu']}}
+  ];
+  var SP='assets/sp/';
+  var NOIMG='assets/logo-dai-kien.png';
+  function src(p){return p.img?SP+p.img:NOIMG;}
+  function priceOf(p){return p.p||'Liên hệ';}
+  function inG(g){return P.filter(function(p){return p.g===g;});}
+
+  /* Product cards (each product rendered exactly once) */
+  G.forEach(function(g){
+    var row=document.querySelector('.prow[data-group="'+g.id+'"]');
+    row.innerHTML=inG(g.id).map(function(p){
+      return '<article class="pc" id="sp-'+p.id+'" data-t="'+p.t.join(' ')+'">'+
+        '<a class="pc-link" href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'" aria-label="Xem chi tiết '+p.n+' – '+p.q+'">'+
+        '<div class="pi'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+p.n+' – '+p.q+'" loading="lazy" width="300" height="300"></div>'+
+        '<h3>'+p.n+' – '+p.q+'</h3></a>'+
+        '<div class="price'+(p.p?'':' lh')+'">'+priceOf(p)+'</div>'+
+        '<div class="spec">Quy cách: '+p.q+'</div>'+
+        '<a class="more-d" href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'">Xem chi tiết ›</a>'+
+        '<button type="button" class="wh" data-contact aria-haspopup="dialog">Cần giá sỉ? Liên hệ ngay</button>'+
+        '<div class="acts"><a class="btn-navy" href="'+TEL+'" aria-label="Gọi hỏi mua '+p.n+' '+p.q+'">'+ic('phone')+'Gọi</a>'+
+        '<a class="btn-zalo" href="'+ZALO+'" target="_blank" rel="noopener" aria-label="Nhắn Zalo hỏi '+p.n+' '+p.q+'">'+ic('chat')+'Zalo</a></div>'+
+      '</article>';
+    }).join('');
+  });
+
+  /* Category tiles */
+  document.getElementById('catTiles').innerHTML=G.map(function(g){
+    return '<a class="cat" href="#'+g.id+'"><span class="im"><img src="'+SP+g.img+'" alt="" loading="lazy"></span><b>'+g.n+'</b></a>';
+  }).join('');
+
+  /* Sidebar + flyouts, category panel */
+  var extra=[{h:'#lien-he',n:'Báo giá công trình',ic:'doc'},{h:'#lien-he',n:'Dành cho đại lý',ic:'store'},{h:'#lien-he',n:'Liên hệ',ic:'phone'}];
+  document.getElementById('sideList').innerHTML=G.map(function(g){
+    return '<li><a href="#'+g.id+'">'+ic(g.ic)+g.n+'<span class="chev" aria-hidden="true">›</span></a>'+
+      '<div class="fly"><div class="fly-in"><h3>'+g.n+'</h3><div class="fly-grid">'+
+      inG(g.id).map(function(p){return '<a href="#chi-tiet-'+p.id+'" data-pd="'+p.id+'"><img src="'+src(p)+'" alt="" loading="lazy"><span><b>'+p.n+' – '+p.q+'</b><small>'+priceOf(p)+'</small></span></a>';}).join('')+
+      '</div><a class="all" href="#'+g.id+'">Xem tất cả '+g.n.toLowerCase()+' ›</a></div></div></li>';
+  }).join('')+'<li aria-hidden="true"><hr></li>'+extra.map(function(e){
+    return '<li><a href="'+e.h+'">'+ic(e.ic)+e.n+'<span class="chev" aria-hidden="true">›</span></a></li>';
+  }).join('');
+  document.getElementById('catPanelList').innerHTML=G.map(function(g){
+    return '<a href="#'+g.id+'">'+ic(g.ic)+g.n+'</a>';
+  }).join('')+'<hr>'+extra.map(function(e){return '<a href="'+e.h+'">'+ic(e.ic)+e.n+'</a>';}).join('');
+
+  /* Sơn kẽm filter chips */
+  var kemSec=document.getElementById('son-kem');
+  var chips=kemSec.querySelectorAll('.chip');
+  function setFilter(f){
+    chips.forEach(function(c){c.setAttribute('aria-pressed',String(c.getAttribute('data-f')===f));});
+    kemSec.querySelectorAll('.pc').forEach(function(card){
+      var t=card.getAttribute('data-t').split(' ');
+      card.hidden=!(f==='all'||t.indexOf(f)>-1);
+    });
+    kemSec.querySelector('.prow').scrollLeft=0;
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){setFilter(c.getAttribute('data-f'));});});
+  document.querySelector('[data-reset="son-kem"]').addEventListener('click',function(){setFilter('all');});
+
+  function goTo(id){
+    var card=document.getElementById('sp-'+id);
+    if(!card) return;
+    if(card.hidden) setFilter('all');
+    card.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center',inline:'nearest'});
+    card.classList.add('flash');
+    setTimeout(function(){card.classList.remove('flash');},1800);
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-goto]');
+    if(a){e.preventDefault();goTo(a.getAttribute('data-goto'));if(document.activeElement)document.activeElement.blur();}
+  });
+
+  /* Search (accent-insensitive) */
+  function norm(s){return s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').replace(/Đ/g,'d').toLowerCase().trim();}
+  var q=document.getElementById('q'), sd=document.getElementById('sdrop');
+  var gName={};G.forEach(function(g){gName[g.id]=g.n;});
+  function matches(v){
+    var words=norm(v).split(/\s+/).filter(Boolean);
+    return P.filter(function(p){
+      var hay=norm(p.n+' '+p.q+' '+gName[p.g]);
+      return words.every(function(w){return hay.indexOf(w)>-1;});
+    });
+  }
+  function closeSearch(){sd.hidden=true;q.setAttribute('aria-expanded','false');}
+  function renderSearch(){
+    var v=q.value;
+    if(!v.trim()){closeSearch();return;}
+    var r=matches(v);
+    sd.innerHTML=r.length?r.map(function(p){
+      return '<a href="#chi-tiet-'+p.id+'" role="option" data-pd="'+p.id+'"><img src="'+src(p)+'" alt=""><span><b>'+p.n+'</b><small>'+p.q+' · '+gName[p.g]+'</small></span><span class="pr">'+priceOf(p)+'</span></a>';
+    }).join(''):'<div class="empty">Chưa tìm thấy sản phẩm phù hợp. Gọi <a href="'+TEL+'"><b>0374 390 276</b></a> hoặc nhắn <a href="'+ZALO+'" target="_blank" rel="noopener"><b>Zalo</b></a> để được tư vấn.</div>';
+    sd.hidden=false;q.setAttribute('aria-expanded','true');
+  }
+  q.addEventListener('input',renderSearch);
+  q.addEventListener('focus',renderSearch);
+  q.addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'){var f=sd.querySelector('a');if(f&&!sd.hidden){e.preventDefault();f.focus();}}
+    if(e.key==='Escape'){closeSearch();}
+  });
+  sd.addEventListener('keydown',function(e){
+    var items=[].slice.call(sd.querySelectorAll('a[data-pd]')),i=items.indexOf(document.activeElement);
+    if(e.key==='ArrowDown'&&i<items.length-1){e.preventDefault();items[i+1].focus();}
+    if(e.key==='ArrowUp'){e.preventDefault();(i>0?items[i-1]:q).focus();}
+    if(e.key==='Escape'){closeSearch();q.focus();}
+  });
+  sd.addEventListener('click',function(e){if(e.target.closest('[data-pd]'))closeSearch();});
+  document.getElementById('searchForm').addEventListener('submit',function(e){
+    e.preventDefault();var r=matches(q.value);
+    if(r.length){closeSearch();q.blur();openPd(r[0].id,q);} else renderSearch();
+  });
+
+  /* Hình ảnh thực tế: lọc, xem thêm, phóng to */
+  var PH=[
+    ['kho-1.jpg','kho','Hàng có sẵn trong kho'],
+    ['kho-2.jpg','kho','Sơn 1K và sơn dầu xếp sẵn chờ giao'],
+    ['kho-3.jpg','kho','Sơn dầu tổng hợp thùng 18kg'],
+    ['kho-4.jpg','kho','Sơn 1K và sơn sắt mạ kẽm 1 thành phần'],
+    ['kho-5.jpg','ct','Sơn 1K tập kết tại công trình'],
+    ['kho-6.jpg','ct','Sơn 1K, 2K và epoxy giao tận xưởng cơ khí'],
+    ['giao-cong-trinh.jpg','ct','Giao sơn tận công trình'],
+    ['giao-cong-trinh-2.jpg','ct','Sơn 1K tại công trình'],
+    ['cong-trinh-cua-sat.jpg','ct','Cửa sắt hoàn thiện tại công trình'],
+    ['cong-trinh-cua-sat-2.jpg','ct','Khung cửa sắt sau khi sơn'],
+    ['cong-trinh-cua-sat-3.jpg','ct','Bề mặt sơn khung cửa sắt'],
+    ['xuong-01.jpg','xuong','Kết cấu thép sơn đỏ tại xưởng'],
+    ['xuong-02.jpg','xuong','Dầm thép đã sơn'],
+    ['xuong-03.jpg','xuong','Cột thép đã sơn'],
+    ['xuong-04.jpg','xuong','Dầm thép đánh số chờ lắp dựng'],
+    ['xuong-05.jpg','xuong','Thép hộp đã sơn'],
+    ['xuong-06.jpg','xuong','Cấu kiện thép xếp chờ giao'],
+    ['xuong-07.jpg','xuong','Bản mã và dầm thép đã sơn'],
+    ['xuong-08.jpg','xuong','Cấu kiện thép tại xưởng gia công'],
+    ['xuong-09.jpg','xuong','Lan can sắt hoa văn đã sơn']
+  ];
+  var phBox=document.getElementById('photos'), phMore=document.getElementById('phMore'), phCount=document.getElementById('phCount');
+  var phChips=document.querySelectorAll('#hinh-anh [data-pf]'), phF='all', phAll=false, phVis=[];
+  var PH_LIMIT=8;
+  function renderPh(){
+    var list=PH.filter(function(x){return phF==='all'||x[1]===phF;});
+    var show=phAll?list:list.slice(0,PH_LIMIT); phVis=list;
+    phBox.innerHTML=show.map(function(x,i){return '<figure><button type="button" class="ph-btn" data-ph="'+i+'" aria-label="Phóng to ảnh: '+x[2]+'"><img src="assets/anh/'+x[0]+'" alt="'+x[2]+'" loading="lazy"></button><figcaption>'+x[2]+'</figcaption></figure>';}).join('');
+    phMore.hidden=list.length<=show.length;
+    phMore.textContent='Xem thêm '+(list.length-show.length)+' ảnh';
+    phCount.textContent=list.length+' ảnh';
+  }
+  phChips.forEach(function(c){c.addEventListener('click',function(){phF=c.getAttribute('data-pf');phAll=false;phChips.forEach(function(b){b.setAttribute('aria-pressed',String(b===c));});renderPh();});});
+  phMore.addEventListener('click',function(){phAll=true;renderPh();});
+  renderPh();
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lbCap=document.getElementById('lbCap'), lbI=0, lbTrig=null;
+  function lbShow(i){lbI=(i+phVis.length)%phVis.length;var x=phVis[lbI];lbImg.src='assets/anh/'+x[0];lbImg.alt=x[2];lbCap.textContent=x[2]+' ('+(lbI+1)+'/'+phVis.length+')';}
+  function lbOpen(i,t){lbTrig=t;lbShow(i);lb.hidden=false;document.body.classList.add('pd-open');lb.querySelector('.lb-x').focus();}
+  function lbClose(){lb.hidden=true;document.body.classList.remove('pd-open');if(lbTrig)lbTrig.focus();}
+  phBox.addEventListener('click',function(e){var b=e.target.closest('[data-ph]');if(b)lbOpen(+b.getAttribute('data-ph'),b);});
+  lb.querySelector('.lb-x').addEventListener('click',lbClose);
+  lb.querySelector('.lb-prev').addEventListener('click',function(){lbShow(lbI-1);});
+  lb.querySelector('.lb-next').addEventListener('click',function(){lbShow(lbI+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)lbClose();});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lbClose();if(e.key==='ArrowLeft')lbShow(lbI-1);if(e.key==='ArrowRight')lbShow(lbI+1);});
+  var lbX0=null; lb.addEventListener('touchstart',function(e){lbX0=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(lbX0===null)return;var dx=e.changedTouches[0].clientX-lbX0;if(Math.abs(dx)>40)lbShow(lbI+(dx<0?1:-1));lbX0=null;});
+
+  /* Product detail */
+  var pd=document.getElementById('pd'), pdBd=document.getElementById('pdBd'), pdBody=document.getElementById('pdBody'), pdTrig=null;
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function list(a,ord){return a&&a.length?'<'+(ord?'ol':'ul')+' class="pd-list'+(ord?' ord':'')+'">'+a.map(function(x){return '<li>'+(ord?'':ic('check'))+'<span>'+esc(x)+'</span></li>';}).join('')+'</'+(ord?'ol':'ul')+'>':'';}
+  function sec(t,h){return h?'<section class="pd-sec"><h3>'+t+'</h3>'+h+'</section>':'';}
+  function findP(id){id=+id;for(var i=0;i<P.length;i++){if(P[i].id===id)return P[i];}return null;}
+  function openPd(id,trig){
+    var p=findP(id); if(!p) return;
+    pdTrig=trig||document.activeElement; var d=p.d||{};
+    var colors=d.mau==='ruby'?RUBY_COLORS:d.mau;
+    var ts=(d.ts||[]).slice(); ts.unshift(['Quy cách',p.q]); ts.unshift(['Nhóm sản phẩm',gName[p.g]]);
+    var mailto='mailto:daikien18@gmail.com?subject='+encodeURIComponent('Hỏi giá '+p.n+' – '+p.q);
+    var related=inG(p.g).filter(function(x){return x.id!==p.id;});
+    pdBody.innerHTML=
+      '<div class="pd-head">'+
+        '<div class="pd-img'+(p.img?'':' noimg')+'"><img src="'+src(p)+'" alt="'+esc(p.n+' – '+p.q)+'"></div>'+
+        '<div class="pd-info">'+
+          '<p class="pd-cat">'+esc(gName[p.g])+'</p>'+
+          '<h2 id="pd-h">'+esc(p.n)+'</h2>'+
+          '<p class="pd-q">Quy cách: <b>'+esc(p.q)+'</b></p>'+
+          '<div class="pd-price'+(p.p?'':' lh')+'">'+(p.p?esc(p.p)+'<small>Giá bán lẻ</small>':'Liên hệ<small>Gọi hoặc nhắn Zalo để nhận báo giá</small>')+'</div>'+
+          '<p class="pd-whs">Cần giá sỉ, đại lý, công trình? Gọi <a href="'+TEL+'"><b>0374 390 276</b></a></p>'+
+          '<div class="pd-acts">'+
+            '<a class="btn-gold" href="'+TEL+'">'+ic('phone')+'Gọi 0374 390 276</a>'+
+            '<a class="btn-zalo" href="'+ZALO+'" target="_blank" rel="noopener">'+ic('chat')+'Nhắn Zalo</a>'+
+            '<a class="btn-navy" href="'+mailto+'">'+ic('mail')+'Gửi email hỏi giá</a>'+
+            '<a class="btn-fb" href="'+FB+'" target="_blank" rel="noopener">'+ic('fb')+'Nhắn Facebook</a>'+
+          '</div>'+
+          '<ul class="pd-perks"><li>'+ic('truck')+'Giao TP. Hồ Chí Minh &amp; miền Nam</li><li>'+ic('headset')+'Tư vấn chọn sơn, định mức, cách thi công</li></ul>'+
+        '</div>'+
+      '</div>'+
+      sec('Mô tả sản phẩm',d.m?'<p>'+esc(d.m)+'</p>':'')+
+      sec('Đặc điểm nổi bật',list(d.dd))+
+      sec('Ứng dụng',list(d.ud))+
+      sec('Hướng dẫn thi công',list(d.hd,true))+
+      sec('Thông số kỹ thuật','<table class="pd-tb"><tbody>'+ts.map(function(r){return '<tr><th scope="row">'+esc(r[0])+'</th><td>'+esc(r[1])+'</td></tr>';}).join('')+'</tbody></table>')+
+      sec('Màu sắc',colors&&colors.length?'<div class="pd-colors">'+colors.map(function(c){return '<span>'+esc(c)+'</span>';}).join('')+'</div>'+(d.mau==='ruby'?'<p class="pd-note">Theo bảng màu sơn Ruby. Liên hệ để xác nhận màu có sẵn cho quy cách này.</p>':''):'')+
+      '<p class="pd-note">Thông tin mang tính tham khảo theo nhà sản xuất. Vui lòng liên hệ Đại Kiên để được tư vấn chính xác cho công trình của bạn.</p>'+
+      (related.length?sec('Sản phẩm cùng nhóm','<div class="pd-rel">'+related.map(function(x){return '<a href="#chi-tiet-'+x.id+'" data-pd="'+x.id+'"><span class="'+(x.img?'':'noimg')+'"><img src="'+src(x)+'" alt="" loading="lazy"></span><b>'+esc(x.n+' – '+x.q)+'</b><small>'+esc(priceOf(x))+'</small></a>';}).join('')+'</div>'):'');
+    pd.hidden=false; pdBd.hidden=false; document.body.classList.add('pd-open');
+    pd.scrollTop=0; pdBody.scrollTop=0;
+    if(location.hash!=='#chi-tiet-'+p.id){history.pushState({pd:p.id},'','#chi-tiet-'+p.id);}
+    pd.querySelector('.pd-back').focus();
+  }
+  function closePd(fromPop){
+    if(pd.hidden) return;
+    pd.hidden=true; pdBd.hidden=true; document.body.classList.remove('pd-open');
+    if(!fromPop&&/^#chi-tiet-/.test(location.hash)){history.pushState(null,'',location.pathname+location.search);}
+    if(pdTrig&&pdTrig.focus) pdTrig.focus();
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-pd]');
+    if(a){e.preventDefault();e.stopPropagation();openPd(a.getAttribute('data-pd'),a);return;}
+    if(e.target.closest('[data-pd-close]')||e.target===pdBd){closePd();}
+  },true);
+  document.addEventListener('keydown',function(e){
+    if(pd.hidden) return;
+    if(e.key==='Escape'){closePd();}
+    if(e.key==='Tab'){var f=[].slice.call(pd.querySelectorAll('a,button')).filter(function(x){return x.offsetParent!==null;});if(!f.length)return;
+      if(e.shiftKey&&document.activeElement===f[0]){e.preventDefault();f[f.length-1].focus();}
+      else if(!e.shiftKey&&document.activeElement===f[f.length-1]){e.preventDefault();f[0].focus();}}
+  });
+  window.addEventListener('popstate',function(){
+    var m=location.hash.match(/^#chi-tiet-(\d+)$/);
+    if(m) openPd(m[1]); else closePd(true);
+  });
+  (function(){var m=location.hash.match(/^#chi-tiet-(\d+)$/); if(m) openPd(m[1]);})();
+  document.addEventListener('click',function(e){if(!e.target.closest('.search')&&!e.target.closest('#sdrop'))closeSearch();});
+
+  /* Category panel */
+  var panel=document.getElementById('catPanel'), bd=document.getElementById('backdrop');
+  var catBtns=document.querySelectorAll('[data-cat-toggle]');
+  function setCat(open,from){
+    panel.hidden=!open;bd.hidden=!open;document.body.classList.toggle('cat-open',open);
+    catBtns.forEach(function(b){b.setAttribute('aria-expanded',String(open));});
+    if(open){closePop();var f=panel.querySelector('a');if(f)f.focus();}
+    else if(from&&from.focus) from.focus();
+  }
+  catBtns.forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();setCat(panel.hidden);});});
+  bd.addEventListener('click',function(){setCat(false);closePop();});
+  panel.addEventListener('click',function(e){if(e.target.closest('a'))setCat(false);});
+
+  /* Contact popover */
+  var pop=document.getElementById('pop'), lastTrig=null;
+  function openPop(t){lastTrig=t;if(!panel.hidden)setCat(false);pop.hidden=false;document.querySelectorAll('[data-contact][aria-expanded]').forEach(function(b){b.setAttribute('aria-expanded','true');});pop.querySelector('a').focus();}
+  function closePop(){if(pop.hidden)return;pop.hidden=true;document.querySelectorAll('[data-contact][aria-expanded]').forEach(function(b){b.setAttribute('aria-expanded','false');});if(lastTrig)lastTrig.focus();}
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-contact]');
+    if(t){e.stopPropagation();pop.hidden?openPop(t):closePop();return;}
+    if(!pop.hidden&&!e.target.closest('#pop'))closePop();
+  });
+  pop.querySelector('.x').addEventListener('click',closePop);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(!pop.hidden)closePop();if(!panel.hidden)setCat(false,catBtns[0]);}});
+
+  /* Back to top */
+  var tt=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){tt.hidden=window.scrollY<500;},{passive:true});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});document.querySelector('.logo').focus();});
+
+  /* Carousel */
+  var car=document.getElementById('car'),slides=car.querySelectorAll('.slide'),dots=car.querySelectorAll('.dots button'),cur=0,timer=null;
+  function show(i){
+    cur=(i+slides.length)%slides.length;
+    slides.forEach(function(s,k){s.classList.toggle('on',k===cur);s.setAttribute('aria-hidden',String(k!==cur));
+      s.querySelectorAll('a').forEach(function(a){a.tabIndex=k===cur?0:-1;});});
+    dots.forEach(function(d,k){d.setAttribute('aria-current',String(k===cur));});
+  }
+  function start(){if(reduce||timer)return;timer=setInterval(function(){show(cur+1);},5000);}
+  function stop(){clearInterval(timer);timer=null;}
+  car.querySelector('.prev').addEventListener('click',function(){show(cur-1);});
+  car.querySelector('.next').addEventListener('click',function(){show(cur+1);});
+  dots.forEach(function(d,k){d.addEventListener('click',function(){show(k);});});
+  car.addEventListener('mouseenter',stop);car.addEventListener('mouseleave',start);
+  car.addEventListener('focusin',stop);car.addEventListener('focusout',start);
+  var tx=null;
+  car.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;stop();},{passive:true});
+  car.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)show(cur+(dx<0?1:-1));tx=null;start();});
+  document.addEventListener('visibilitychange',function(){document.hidden?stop():start();});
+  show(0);start();
+})();
+</script>
+</body>
+</html>
